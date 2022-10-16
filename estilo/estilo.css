@@ -2,3 +2,35 @@
   Omar Teixeira Gonzalez - UO281847
       Descripcion de los estilos
 ***********************************/
+body {
+  background-color: gray;
+}
+
+header {
+  background-color: rgb(151, 148, 148);
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: rgb(255, 130, 130);
+}
+
+nav {
+  background-color: rgb(255, 130, 130);
+}
+
+h1 {
+  background-color: darkred;
+  color: white;
+}
+
+h2 {
+  background-color: rgb(255, 41, 41);
+}
+
+h3 {
+  background-color: rgb(255, 110, 110);
+}
