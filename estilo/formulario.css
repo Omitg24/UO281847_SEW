@@ -1,6 +1,9 @@
 /***********************************
   Omar Teixeira Gonzalez - UO281847
-      Descripcion de los estilos
+Documento que contiene el estilo
+(color, tamaño, bordes, etc) del 
+formulario presente en uno de los html
+de la página.
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 form {
@@ -19,13 +22,6 @@ fieldset, legend {
   padding: 0.5em;  
 }
 
-/*Selector Specificity: (0, 0, 1)*/
-legend {
-  background-color: rgb(110, 16, 16);
-  font-style: bold;
-  color: white;
-}
-
 /*Selector Specificity: (0, 0, 2)*/
 input, textarea {
   background-color: rgb(192, 192, 192);    
@@ -34,6 +30,13 @@ input, textarea {
   border-style: solid;  
   color:black;
   font-size: 1.05em;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+legend {
+  background-color: rgb(110, 16, 16);
+  font-style: bold;
+  color: white;
 }
 
 /*Selector Specificity: (0, 1, 1)*/

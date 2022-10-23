@@ -1,6 +1,8 @@
 /***********************************
   Omar Teixeira Gonzalez - UO281847
-      Descripcion de los estilos
+Documento que contiene el layout de 
+los diferentes html que forman la
+pagina
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 body{
@@ -28,26 +30,12 @@ header {
 /*Selector Specificity: (0, 0, 1)*/
 main {
   grid-area: main;
-  display: grid;  
   padding: 0.25em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 footer {
   grid-area: bib;
-}
-
-/*Selector Specificity: (0, 0, 1)*/
-p {
-  margin: 0.5em;
-  padding: 0.25em;
-}
-
-/*Selector Specificity: (0, 0, 2)*/
-header img {
-  grid-area: headerImage;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
@@ -73,15 +61,30 @@ h2, h3 {
 }
 
 /*Selector Specificity: (0, 0, 1)*/
-img, video, audio {
-  margin: 0.55em;
+p {
+  margin: 0.5em;
+  padding: 0.25em;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+figcaption {
+  margin-left: 2.5em;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+img, video, audio {    
+  margin-left: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   max-width: 100vw;
   height: auto;
 }
 
 /*Selector Specificity: (0, 0, 2)*/
-footer a, nav a {
-  padding: 0.55em;
+header img {
+  grid-area: headerImage;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /*Selector Specificity: (0, 0, 2)*/
@@ -90,4 +93,9 @@ footer p{
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+footer a, nav a {
+  padding: 0.55em;
 }

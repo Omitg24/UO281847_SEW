@@ -1,6 +1,9 @@
 /***********************************
   Omar Teixeira Gonzalez - UO281847
-      Descripcion de los estilos
+Documento que contiene el estilo
+(fuente, tamaño, color, etc) de 
+los diferentes html que forman la
+pagina
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 body {
@@ -9,8 +12,9 @@ body {
 }
 
 /*Selector Specificity: (0, 0, 1)*/
-header, main {
+header, main, article, section {
   background-color: rgb(184, 184, 184);  
+  color: black;
   border-radius: 1em;
   font: 1em Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -43,7 +47,7 @@ figcaption{
 }
 
 /*Selector Specificity: (0, 0, 2)*/
-main img, header img, video, audio {
+img, video, audio {
   border-radius: 0.875em;
 }
 
@@ -58,13 +62,18 @@ nav a {
   text-decoration: none;
 }
 
+/*Selector Specificity: (0, 0, 2)*/
+main a {
+  color:rgb(0, 41, 82);
+}
+
 /*Selector Specificity: (0, 1, 2)*/
 nav a:hover {
   background-color: rgb(135, 45, 45);
-  border-radius: 1em;
+  border-radius: 0.65em;
 }
 
 /*Selector Specificity: (0, 1, 2)*/
 footer a:hover {
-  color: darkred;
+  color: rgb(90, 0, 0);
 }
