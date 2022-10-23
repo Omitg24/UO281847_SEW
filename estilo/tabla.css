@@ -8,7 +8,7 @@ de la página.
 /*Selector Specificity: (0, 0, 1)*/
 table {
   /*color hereda de body*/
-  background-color: rgb(128, 126, 126);
+  background-color: rgb(150, 150, 150);
   border-width: 0.25em;
   border-radius: 1em;  
   border-style: solid;
@@ -19,7 +19,7 @@ table {
 /*Selector Specificity: (0, 0, 2)*/
 table th{
   /*color hereda de body*/
-  background-color: rgb(237, 113, 113);
+  background-color: rgb(243, 123, 123);
   border-radius: 0.75em;  
   border-width: 0.15em;
   border-style: solid;
@@ -30,7 +30,7 @@ table th{
 /*Selector Specificity: (0, 0, 2)*/
 table td {
   /*color hereda de body*/
-  background-color: rgb(165, 162, 162);
+  background-color: rgb(181, 181, 181);
   border-radius: 0.75em;  
   border-width: 0.15em;
   border-style: solid;
