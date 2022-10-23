@@ -19,7 +19,7 @@ table {
 /*Selector Specificity: (0, 0, 2)*/
 table th{
   /*color hereda de body*/
-  background-color: rgb(215, 100, 100);
+  background-color: rgb(237, 113, 113);
   border-radius: 0.75em;  
   border-width: 0.15em;
   border-style: solid;
