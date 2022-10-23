@@ -14,9 +14,16 @@ fieldset, legend {
   border: 0.15em;
   border-radius: 1em;
   border-style: solid;  
-  border-color: rgb(98, 0, 0);  
+  border-color: rgb(110, 16, 16);  
   margin:0.25em;
   padding: 0.5em;  
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+legend {
+  background-color: rgb(110, 16, 16);
+  font-style: bold;
+  color: white;
 }
 
 /*Selector Specificity: (0, 0, 2)*/
@@ -31,6 +38,6 @@ input, textarea {
 
 /*Selector Specificity: (0, 1, 1)*/
 input:hover, textarea:hover{
-  background-color: rgb(130, 130, 130);
-  color: black;
+  background-color: rgb(145, 145, 145);
+  border-color: black;
 }
