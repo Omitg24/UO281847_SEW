@@ -22,7 +22,7 @@ fieldset, legend {
 
 /*Selector Specificity: (0, 0, 2)*/
 input, textarea {
-  background-color: rgb(192, 192, 192);    
+  background-color: rgb(198, 198, 198);    
   border-radius: 0.5em;
   border-width: 0.15em;
   border-style: solid;  
@@ -37,14 +37,24 @@ legend {
 }
 
 /*Selector Specificity: (0, 0, 1), (0, 0, 2)*/
-fieldset, form p {
+fieldset, fieldset p {
   /*color hereda de body*/
-  background-color: rgb(165, 165, 165); 
+  background-color: rgb(174, 174, 174); 
+}
+
+/*Selector Specificity: (0, 1, 1)*/
+input[type="submit"] {
+  background-color: rgb(174, 174, 174);
+  border: 0.15em;
+  border-radius: 1em;
+  border-style: solid;  
+  border-color: rgb(110, 16, 16);  
+  padding: 0.5em; 
 }
 
 /*Selector Specificity: (0, 1, 1)*/
 input:hover, textarea:hover{
   /*color hereda de input y de textarea*/
-  background-color: rgb(145, 145, 145);
+  background-color: rgb(156, 156, 156);
   border-color: black;
 }
