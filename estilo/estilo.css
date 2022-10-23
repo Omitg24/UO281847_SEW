@@ -95,9 +95,3 @@ nav a:hover {
   background-color: rgb(135, 45, 45);
   border-radius: 0.65em;
 }
-
-/*Selector Specificity: (0, 1, 2)*/
-footer a:hover {
-  color: rgb(90, 0, 0);
-  /*background-color hereda de footer*/  
-}
