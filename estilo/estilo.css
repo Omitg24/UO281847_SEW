@@ -23,7 +23,8 @@ header, main, article, section {
 /*Selector Specificity: (0, 0, 1)*/
 footer, nav, h3 {
   color: white;
-  background-color: rgb(190, 85, 85);  
+  font: 1em Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(131, 32, 32);  
   border-radius: 0.75em;
 }
 
@@ -32,25 +33,31 @@ h1 {
   color: white;
   background-color: darkred;  
   font: 3em 'Courier New', Courier, monospace;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.1em;
+  border-style: solid;
   border-radius: 0.45em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 h2 {
   color: white;
-  background-color: rgb(181, 35, 35);  
+  background-color: rgb(109, 16, 16);  
+  border-color: rgb(0, 0, 0);
+  border-width: 0.15em;
+  border-style: solid;
   border-radius: 0.6em;
+}
+
+h3 {
+  border-color: rgb(0, 0, 0);
+  border-width: 0.2em;
+  border-style: solid;  
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 figcaption{
   font-style: italic;
-}
-
-/*Selector Specificity: (0, 0, 1)*/
-p {
-  color:black;
-  background-color: rgb(184, 184, 184);
 }
 
 /*Selector Specificity: (0, 0, 1)*/
@@ -74,6 +81,12 @@ nav a {
 main a {
   color:rgb(0, 41, 82);
   /*background-color hereda de main*/  
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+main p {
+  color:black;
+  background-color: rgb(184, 184, 184);
 }
 
 /*Selector Specificity: (0, 1, 2)*/

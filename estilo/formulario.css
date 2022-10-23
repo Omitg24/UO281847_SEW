@@ -31,15 +31,15 @@ input, textarea {
 }
 
 /*Selector Specificity: (0, 0, 1)*/
-fieldset {
-  /*color hereda de body*/
-  background-color: rgb(165, 165, 165); 
-}
-
-/*Selector Specificity: (0, 0, 1)*/
 legend {
   color: white;
   background-color: rgb(134, 60, 60);  
+}
+
+/*Selector Specificity: (0, 0, 1), (0, 0, 2)*/
+fieldset, form p {
+  /*color hereda de body*/
+  background-color: rgb(165, 165, 165); 
 }
 
 /*Selector Specificity: (0, 1, 1)*/
