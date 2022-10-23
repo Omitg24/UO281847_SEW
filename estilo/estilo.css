@@ -47,7 +47,13 @@ figcaption{
   font-style: italic;
 }
 
-/*Selector Specificity: (0, 0, 2)*/
+/*Selector Specificity: (0, 0, 1)*/
+p {
+  color:black;
+  background-color: rgb(184, 184, 184);
+}
+
+/*Selector Specificity: (0, 0, 1)*/
 img, video, audio {
   border-radius: 0.875em;
 }
