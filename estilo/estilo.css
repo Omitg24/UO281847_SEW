@@ -84,7 +84,7 @@ main a {
 }
 
 /*Selector Specificity: (0, 0, 2)*/
-main p, main ol, main ul {
+main p, article p, section p, main ol, main ul {
   color:rgb(0, 0, 0);
   background-color: rgb(200, 200, 200);
 }
