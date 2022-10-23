@@ -1,0 +1,36 @@
+/***********************************
+  Omar Teixeira Gonzalez - UO281847
+      Descripcion de los estilos
+***********************************/
+/*Selector Specificity: (0, 0, 1)*/
+form {
+  padding: 1em;
+  font-size: 1.05em;
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+fieldset, legend {
+  background-color: rgb(165, 165, 165);    
+  border: 0.15em;
+  border-radius: 1em;
+  border-style: solid;  
+  border-color: rgb(98, 0, 0);  
+  margin:0.25em;
+  padding: 0.5em;  
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+input, textarea {
+  background-color: rgb(192, 192, 192);    
+  border-radius: 0.5em;
+  border-width: 0.15em;
+  border-style: solid;  
+  color:black;
+  font-size: 1.05em;
+}
+
+/*Selector Specificity: (0, 1, 1)*/
+input:hover, textarea:hover{
+  background-color: rgb(130, 130, 130);
+  color: black;
+}
