@@ -10,7 +10,7 @@ form {
   padding: 1em;
 }
 
-/*Selector Specificity: (0, 0, 2)*/
+/*Selector Specificity: (0, 0, 1)*/
 fieldset, legend {  
   border: 0.15em;
   border-radius: 1em;
@@ -20,7 +20,7 @@ fieldset, legend {
   padding: 0.5em;  
 }
 
-/*Selector Specificity: (0, 0, 2)*/
+/*Selector Specificity: (0, 0, 1)*/
 input, textarea {
   background-color: rgb(198, 198, 198);    
   border-radius: 0.5em;

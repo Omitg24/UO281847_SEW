@@ -9,22 +9,23 @@ pagina
 body {
   /*color por defecto*/
   background-color: gray;  
+  font: 1.025em Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 1em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 header, main, article, section {
   /*color hereda de body*/
-  background-color: rgb(190, 190, 190);    
-  font: 1.025em Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(190, 190, 190);
+  /*font hereda de body*/    
   border-radius: 1em;  
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 footer, nav, h3 {
   color: white;
-  font: 1em Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(147, 48, 48);  
+  /*font hereda de body*/    
   border-radius: 0.75em;
 }
 
@@ -43,6 +44,7 @@ h1 {
 h2 {
   color: white;
   background-color: rgb(109, 16, 16);  
+  /*font hereda de body*/
   border-color: rgb(0, 0, 0);
   border-width: 0.15em;
   border-style: solid;
@@ -51,6 +53,7 @@ h2 {
 
 /*Selector Specificity: (0, 0, 1)*/
 h3 {
+  /*font hereda de body*/
   border-color: rgb(0, 0, 0);
   border-width: 0.2em;
   border-style: solid;  
@@ -94,4 +97,5 @@ nav a:hover {
 /*Selector Specificity: (0, 1, 2)*/
 footer a:hover{
   color: rgb(255, 255, 120);
+  /*background-color hereda de footer*/
 }
