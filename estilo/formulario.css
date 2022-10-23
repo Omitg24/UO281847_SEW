@@ -12,8 +12,7 @@ form {
 }
 
 /*Selector Specificity: (0, 0, 2)*/
-fieldset, legend {
-  background-color: rgb(165, 165, 165);    
+fieldset, legend {  
   border: 0.15em;
   border-radius: 1em;
   border-style: solid;  
@@ -33,14 +32,20 @@ input, textarea {
 }
 
 /*Selector Specificity: (0, 0, 1)*/
+fieldset {
+  /*color hereda de body*/
+  background-color: rgb(165, 165, 165); 
+}
+
+/*Selector Specificity: (0, 0, 1)*/
 legend {
-  background-color: rgb(110, 16, 16);
-  font-style: bold;
   color: white;
+  background-color: rgb(134, 60, 60);  
 }
 
 /*Selector Specificity: (0, 1, 1)*/
 input:hover, textarea:hover{
+  /*color hereda de input y de textarea*/
   background-color: rgb(145, 145, 145);
   border-color: black;
 }

@@ -7,37 +7,38 @@ pagina
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 body {
-  background-color: gray;
+  /*color por defecto*/
+  background-color: gray;  
   border-radius: 1em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 header, main, article, section {
-  background-color: rgb(184, 184, 184);  
-  color: black;
-  border-radius: 1em;
+  /*color hereda de body*/
+  background-color: rgb(184, 184, 184);    
   font: 1em Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 1em;  
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 footer, nav, h3 {
-  background-color: rgb(190, 85, 85);
   color: white;
+  background-color: rgb(190, 85, 85);  
   border-radius: 0.75em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 h1 {
-  background-color: darkred;
   color: white;
+  background-color: darkred;  
   font: 3em 'Courier New', Courier, monospace;
   border-radius: 0.45em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 h2 {
-  background-color: rgb(181, 35, 35);
   color: white;
+  background-color: rgb(181, 35, 35);  
   border-radius: 0.6em;
 }
 
@@ -52,9 +53,10 @@ img, video, audio {
 }
 
 /* Selector Specificity: (0, 0, 2) */
-footer a, nav a  {
-  font: 1.35em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+footer a, nav a  {    
   color:white;    
+  /*background-color hereda de footer y nav respectivamente*/
+  font: 1.35em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
 /* Selector Specificity: (0, 0, 2) */
@@ -65,10 +67,12 @@ nav a {
 /*Selector Specificity: (0, 0, 2)*/
 main a {
   color:rgb(0, 41, 82);
+  /*background-color hereda de main*/  
 }
 
 /*Selector Specificity: (0, 1, 2)*/
 nav a:hover {
+  /*color hereda de nav a*/
   background-color: rgb(135, 45, 45);
   border-radius: 0.65em;
 }
@@ -76,4 +80,5 @@ nav a:hover {
 /*Selector Specificity: (0, 1, 2)*/
 footer a:hover {
   color: rgb(90, 0, 0);
+  /*background-color hereda de footer*/  
 }

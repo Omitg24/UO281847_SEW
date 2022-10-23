@@ -7,6 +7,7 @@ de la página.
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 table {
+  /*color hereda de body*/
   background-color: rgb(128, 126, 126);
   border-width: 0.25em;
   border-radius: 1em;  
@@ -17,6 +18,7 @@ table {
 
 /*Selector Specificity: (0, 0, 2)*/
 table th{
+  /*color hereda de body*/
   background-color: rgb(215, 100, 100);
   border-radius: 0.75em;  
   border-width: 0.15em;
@@ -27,6 +29,7 @@ table th{
 
 /*Selector Specificity: (0, 0, 2)*/
 table td {
+  /*color hereda de body*/
   background-color: rgb(165, 162, 162);
   border-radius: 0.75em;  
   border-width: 0.15em;
