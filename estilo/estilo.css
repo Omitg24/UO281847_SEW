@@ -7,14 +7,14 @@ pagina
 ***********************************/
 /*Selector Specificity: (0, 0, 1)*/
 body {
-  /*color por defecto*/
+  color: black;
   background-color: gray;  
   border-radius: 1em;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 header, main, article, section {
-  /*color hereda de body*/
+  color: black;
   background-color: rgb(184, 184, 184);    
   font: 1em Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 1em;  
