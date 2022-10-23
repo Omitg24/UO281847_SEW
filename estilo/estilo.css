@@ -8,7 +8,7 @@ pagina
 /*Selector Specificity: (0, 0, 1)*/
 body {
   /*color por defecto*/
-  background-color: gray;  
+  background-color: rgb(255, 255, 255);  
   border-radius: 1em;
 }
 
