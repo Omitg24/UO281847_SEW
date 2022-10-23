@@ -15,7 +15,7 @@ body {
 /*Selector Specificity: (0, 0, 1)*/
 header, main, article, section {
   /*color hereda de body*/
-  background-color: rgb(200, 200, 200);    
+  background-color: rgb(255, 255, 255);    
   font: 1em Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 1em;  
 }
@@ -84,9 +84,9 @@ main a {
 }
 
 /*Selector Specificity: (0, 0, 2)*/
-main p, article p, section p, main ol, main ul {
+main p, main ol, main ul {
   color:rgb(0, 0, 0);
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(255, 255, 255);
 }
 
 /*Selector Specificity: (0, 1, 2)*/
