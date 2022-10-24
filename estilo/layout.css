@@ -72,7 +72,7 @@ figcaption {
 }
 
 /*Selector Specificity: (0, 0, 1)*/
-img, video, audio {    
+img, video {    
   margin-left: 2.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
