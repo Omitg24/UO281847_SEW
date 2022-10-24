@@ -58,3 +58,8 @@ input:hover, textarea:hover{
   background-color: rgb(156, 156, 156);
   border-color: black;
 }
+
+/*Selector Specificity: (0, 1, 2)*/
+section p:nth-child(3){
+  font-style: italic;
+}

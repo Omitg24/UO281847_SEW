@@ -20,6 +20,7 @@
     <header>        
         <h1>Formulario de inscripción</h1>
         <img alt="Imagen del logo de Ember Learning" src="multimedia/ember_learning.png"/>
+        <!-- Panel de navegación de la web -->
         <nav>
             <a title = "Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
             <a title = "Acceda a la página de Características generales" accesskey="C" tabindex="2" href="caracteristicas.html">Características</a>
@@ -34,9 +35,11 @@
 
     <main>
         <article>
+            <section>
             <h2>Inscripción</h2>
-            <p>Cubriendo el siguiente formulario, se le buscará plaza en los cursos que se encuentran en la base de datos, estos cursos se encuentran en las páginas de Udemy e Imagina.</p>
-            <p><em>Los campos con * son obligatorios.</em></p>            
+                <p>Cubriendo el siguiente formulario, se le buscará plaza en los cursos que se encuentran en la base de datos, estos cursos se encuentran en las páginas de Udemy e Imagina.</p>
+                <p>Los campos con * son obligatorios.</p> 
+            </section>
             <form name="Datos del usuario">
                 <fieldset>
                     <legend>Datos personales</legend>
@@ -70,8 +73,8 @@
                     <p><textarea id="texto" cols="60" rows="5"></textarea></p>
                 </fieldset>
                 <p><input type="submit" value="Enviar formulario"></p>
-            </form>
-        </article>        
+            </form>   
+        </article>            
     </main>
 
     <footer>

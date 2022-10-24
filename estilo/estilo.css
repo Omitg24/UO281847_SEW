@@ -17,15 +17,13 @@ body {
 header, main, article, section {
   /*color hereda de body*/
   background-color: rgb(190, 190, 190);
-  /*font hereda de body*/    
   border-radius: 1em;  
 }
 
 /*Selector Specificity: (0, 0, 1)*/
 footer, nav, h3 {
   color: white;
-  background-color: rgb(147, 48, 48);  
-  /*font hereda de body*/    
+  background-color: rgb(147, 48, 48);    
   border-radius: 0.75em;
 }
 
@@ -43,8 +41,7 @@ h1 {
 /*Selector Specificity: (0, 0, 1)*/
 h2 {
   color: white;
-  background-color: rgb(109, 16, 16);  
-  /*font hereda de body*/
+  background-color: rgb(109, 16, 16);
   border-color: rgb(0, 0, 0);
   border-width: 0.15em;
   border-style: solid;
@@ -53,7 +50,6 @@ h2 {
 
 /*Selector Specificity: (0, 0, 1)*/
 h3 {
-  /*font hereda de body*/
   border-color: rgb(0, 0, 0);
   border-width: 0.2em;
   border-style: solid;  
