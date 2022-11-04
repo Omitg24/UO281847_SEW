@@ -9,7 +9,7 @@ pagina
 body {
   /*color por defecto*/
   background-color: rgb(138, 138, 138);   
-  font: 1.025em Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.025em;
   border-radius: 1em;
 }
 
