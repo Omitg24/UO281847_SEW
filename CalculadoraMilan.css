@@ -1,0 +1,117 @@
+/***********************************
+  Omar Teixeira Gonzalez - UO281847
+      Documento CSS que contiene
+      los estilos definidos para
+      el Ejercicio 3 de la tarea 
+      1 de la práctica de 
+      Computación en la nube
+***********************************/
+/* Selector Specificity: (0, 0, 1) */
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Selector Specificity: (0, 0, 1) */
+header {
+  background-color: #960000;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  padding: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  display: flex;   
+  flex-direction: column; 
+}
+
+/* Selector Specificity: (0, 0, 1) */
+main {
+  background-color: #ffc8c8;  
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6em;
+}
+
+/* Selector Specificity: (0, 0, 1) */
+label {
+  font: 1em Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: right;
+  color : #cecece;
+}
+
+/* Selector Specificity: (0, 1, 1) */
+input[type="text"] {
+  font: 3.5em 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: right;
+  color : #3c3c3c;
+  background-color: #d3d3d3;
+  border-radius: 0.5em;
+  border-color: #778899;
+  border-width: 0.2em;
+}
+
+/* Selector Specificity: (0, 1, 1) */
+input[type="button"] {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 2em;  
+  border-color: #778899;
+  border-width: 0.5em;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"][value="ON/C"],
+input[type="button"][value="CE"],
+input[type="button"][value="+/-"],
+input[type="button"][value="√"],
+input[type="button"][value="%"] {
+  background-color: #ff5050;
+  border-radius: 50%;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"][value="x"],
+input[type="button"][value="÷"],
+input[type="button"][value="-"],
+input[type="button"][value="MRC"],
+input[type="button"][value="+"],
+input[type="button"][value="M-"], 
+input[type="button"][value="M+"] {
+  background-color: #ff5050;
+  border-radius: 1.5em;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"][value="1"],
+input[type="button"][value="2"],
+input[type="button"][value="3"],
+input[type="button"][value="4"],
+input[type="button"][value="5"],
+input[type="button"][value="6"],
+input[type="button"][value="7"],
+input[type="button"][value="8"],
+input[type="button"][value="9"],
+input[type="button"][value="0"],
+input[type="button"][value="."],
+input[type="button"][value="="] {
+  background-color: #ffa0a0;
+  border-radius: 1.25em;
+  border-color: #778899;
+  border-width: 0.3em;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"][value="+"] {
+  grid-row: span 2;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"]:active {
+  background-color: #d3d3d3;
+}
