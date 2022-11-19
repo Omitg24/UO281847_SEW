@@ -204,6 +204,9 @@ class Calculadora {
     raiz() {
         if (this.estadoEncendido) {
             if (this.pantalla != "" && this.operando2 != "") {
+                if (this.pantalla.includes("M") || this.pantalla.includes("E")) {
+                    this.pantalla =  this.pantalla.slice(2, this.pantalla.length);
+                }
                 this.operando2 = this.pantalla;
                 var valorObtenido = Number(this.operando2);            
                 var valorCalculado = Math.sqrt(valorObtenido);

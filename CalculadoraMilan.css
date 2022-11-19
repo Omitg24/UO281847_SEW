@@ -18,7 +18,7 @@ header {
   background-color: #960000;
   border-top-left-radius: 1.5em;
   border-top-right-radius: 1.5em;
-  padding: 2em;
+  padding-bottom: 2em;
   padding-left: 4em;
   padding-right: 4em;
   display: flex;   
