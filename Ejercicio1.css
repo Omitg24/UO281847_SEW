@@ -28,6 +28,6 @@ p{
 }
 /* Especificidad 001*/
 li{
-  color:#808080;
+  color:#111111;
   /*background-color hereda de body*/
 }
