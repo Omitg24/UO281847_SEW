@@ -5,22 +5,22 @@
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
 	<meta name ="author" content ="Omar Teixeira González, UO281847" />
-	<meta name ="description" content ="Documento HTMl realizado para la Tarea 1 del Ejercicio 5 de Computación en el cliente" />
-	<meta name ="keywords" content ="html, css, ecmascript, javascript, calculadora RPN" />
+	<meta name ="description" content ="Documento HTMl realizado para la Tarea 1 del Ejercicio 6 de Computación en el cliente" />
+	<meta name ="keywords" content ="html, css, ecmascript, javascript, calculadora RPN Especializada" />
 	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
-    <title>Calculadora RPN</title>   
-    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <title>Calculadora Especializada</title>   
+    <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
 </head>
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
-        <h1>Calculadora RPN</h1>
+        <h1>Calculadora Especializada</h1>
     </header>  
     <main>
         <section>
-            <h2>HP</h2>
-            <label for="pila">Prime Graphing Calculator</label>
+            <h2>CASIO</h2>
+            <label for="pila">Statistical Calculator</label>
             <textarea id="pila" readonly></textarea>
             <label for="valores">Valor introducido</label>  
             <input type="text" value="0" id="valores" readonly>
@@ -38,6 +38,20 @@
             <input type="button" value="n!" onclick="calculadora.factorial()">
             <input type="button" value="x^y" onclick="calculadora.potencia()" />
             <input type="button" value="ln" onclick="calculadora.ln()" />
+
+            <input type="button" value="μ" onclick="calculadora.media()" />
+            <input type="button" value="Mo" onclick="calculadora.moda()" />
+            <input type="button" value="Me" onclick="calculadora.mediana()" />
+            <input type="button" value="Min" onclick="calculadora.min()" />
+            <input type="button" value="Max" onclick="calculadora.max()" />
+            <input type="button" value="∑" onclick="calculadora.sumatorio()" />
+
+            <input type="button" value="S" onclick="calculadora.desviacionTipica()" />
+            <input type="button" value="S2" onclick="calculadora.varianza()" />     
+            <input type="button" value="CV" onclick="calculadora.coeficienteVariacion()" />
+            <input type="button" value="DrM" onclick="calculadora.desviacionRespectoMedia()" />
+            <input type="button" value="Q1" onclick="calculadora.percentil1()" />
+            <input type="button" value="Q3" onclick="calculadora.percentil3()" />                        
 
             <input type="button" value="±" onclick="calculadora.cambioDeSigno()">
             <input type="button" value="CE" onclick="calculadora.borrar()" />
@@ -65,6 +79,6 @@
         <input type="button" value="." onclick="calculadora.punto()">
         <input type="button" value="-" onclick="calculadora.resta()">        
     </main>
-    <script src="CalculadoraRPN.js"></script>
+    <script src="CalculadoraEspecializada.js"></script>
 </body>
 </html>

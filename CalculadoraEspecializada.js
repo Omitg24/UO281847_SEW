@@ -5,7 +5,7 @@
  * @author Omar Teixeira González, UO281847
  * @version 18/11/2022
  */
- class Stack {
+class Stack {
     /**
      * Constructor de la pila
      */
@@ -476,9 +476,302 @@ class CalculadoraRPN {
 }
 
 /**
+ * Titulo: Clase CalculadoraEspecializada
+ * Descripción: Clase que realiza la funcionalidad de una calculadora RPN especializada en estadística
+ * 
+ * @author Omar Teixeira González, UO281847
+ * @version 21/11/2022
+ */
+class CalculadoraEspecializada extends CalculadoraRPN {
+    /**
+     * Constructor de la calculadora especializada
+     */
+    constructor() {
+        super();
+    }
+
+    /**
+     * Método media
+     */
+    media() {
+        if (this.pila.size() >= 1) {
+            var media = this.calculoMedia();
+            this.pila.clear();
+            this.pila.push(media);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoMedia
+     * @returns media
+     */
+    calculoMedia() {1
+        var size = this.pila.size();
+        var total = this.calculoSumatorio();
+        return total / size;
+    }
+
+    /**
+     * Método moda
+     */
+    moda() {
+        if (!this.pila.isEmpty()) {
+            var moda = this.calculoModa();
+            this.pila.clear();
+            this.pila.push(moda);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoModa
+     * @returns moda
+     */
+    calculoModa() {
+        var maxNRepeticiones = 0;
+        var moda = 0;
+        for(var i = 0; i < this.pila.size(); i++)
+        {
+            var nRepeticiones = 0;
+            for(var j = 0; j < this.pila.size(); j++)
+            {
+                if(this.pila.get(i) == this.pila.get(j))
+                {
+                    nRepeticiones++;
+                }   
+                if(nRepeticiones > maxNRepeticiones)
+                {
+                    moda = this.pila.get(i);
+                    maxNRepeticiones = nRepeticiones;
+                }       
+            }
+        }
+        return moda; 
+    }
+
+    /**
+     * Método mediana
+     */
+    mediana() {
+        if (!this.pila.isEmpty()) {
+            var mediana = this.calculoPercentil(50);
+            this.pila.clear();
+            this.pila.push(mediana);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método min
+     */
+    min() {
+        if (this.pila.size() >= 1) {
+            var min;
+            for (var i = 0; i < this.pila.size(); i++) {
+                if (i == 0) {
+                    min = this.pila.get(i);
+                } else {
+                    if (this.pila.get(i) <= min) {
+                        min = this.pila.get(i);
+                    }
+                }
+            }
+            this.pila.clear();
+            this.pila.push(min);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método max
+     */
+    max() {
+        if (this.pila.size() >= 1) {
+            var min;
+            for (var i = 0; i < this.pila.size(); i++) {
+                if (i == 0) {
+                    min = this.pila.get(i);
+                } else {
+                    if (this.pila.get(i) >= min) {
+                        min = this.pila.get(i);
+                    }
+                }
+            }
+            this.pila.clear();
+            this.pila.push(min);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método sumatorio
+     */
+    sumatorio() {
+        if (!this.pila.isEmpty()) {
+            var sumatorio = this.calculoSumatorio();
+            this.pila.clear();
+            this.pila.push(sumatorio);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoSumatorio
+     * @returns sumatiorio
+     */
+    calculoSumatorio() {
+        var sumatiorio = 0;
+        var size = this.pila.size();
+        for(var i = 0; i < size; i++) {
+            sumatiorio+=this.pila.get(i);
+        }        
+        return sumatiorio;
+    }
+
+    /**
+     * Método desviacionTipica
+     */
+    desviacionTipica() {
+        if (!this.pila.isEmpty()) {
+            var desviacionTipica = this.calculoDesviacionTipica();
+            this.pila.clear();
+            this.pila.push(desviacionTipica);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoDesviacionTipica
+     * @returns desviacionTipica
+     */
+    calculoDesviacionTipica() {
+        var size = this.pila.size();
+        var media = this.calculoMedia();
+        var numerador = 0;
+        for (var i = 0; i < size; i++) {
+            console.log(this.pila.get(i));
+            console.log(numerador);
+            numerador+= (this.pila.get(i)-media)**2;
+        }
+        return Math.sqrt(numerador/size);
+    }
+
+    /**
+     * Método varianza
+     */
+    varianza() {
+        if (!this.pila.isEmpty()) {
+            var varianza = this.calculoVarianza();
+            this.pila.clear();
+            this.pila.push(varianza);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoVarianza
+     * @returns varianza
+     */
+    calculoVarianza() {
+        var desviacionTipica = this.calculoDesviacionTipica();
+        return desviacionTipica**2;
+    }
+
+    /**
+     * Método coeficienteVariacion
+     */
+    coeficienteVariacion() {
+        if (!this.pila.isEmpty()) {
+            var coeficienteVariacion = this.calculoCoeficienteVariacion();
+            this.pila.clear();
+            this.pila.push(coeficienteVariacion);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoCoeficienteVariacion
+     * @returns coeficienteVariacion
+     */
+    calculoCoeficienteVariacion() {
+        var desviacionTipica = this.calculoDesviacionTipica();
+        var media = this.calculoMedia();
+        return desviacionTipica / Math.abs(media) * 100;
+    }
+
+    /**
+     * Método desviacionRespectoMedia
+     */
+    desviacionRespectoMedia() {
+        if (!this.pila.isEmpty()) {
+            var desviacionMedia = this.calculoDesviacionRespectoMedia();
+            this.pila.push(desviacionMedia);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoDesviacionRespectoMedia
+     * @returns desviacionRespectoMedia
+     */
+    calculoDesviacionRespectoMedia() {                
+        var media = this.calculoMedia();
+        var valor = this.pila.pop();
+        return Math.abs(valor - media);
+    }
+
+    /**
+     * Método percentil1
+     */
+    percentil1() {
+        if (!this.pila.isEmpty()) {
+            var valor = this.calculoPercentil(25);
+            this.pila.clear();
+            this.pila.push(valor);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método percentil3
+     */
+    percentil3() {
+        if (!this.pila.isEmpty()) {
+            var valor = this.calculoPercentil(75);
+            this.pila.clear();
+            this.pila.push(valor);
+        }
+        this.pantallaPila = this.pila.print();
+        this.recargarPantalla();
+    }
+
+    /**
+     * Método calculoPercentil
+     * @param percentil 
+     * @returns percentil
+     */
+    calculoPercentil(percentil) {
+        var index = Math.ceil(percentil / 100.0 * this.pila.size());
+        return this.pila.get(index-1);
+    }
+}
+
+/**
  * Atributo calculadora
  */
-var calculadora = new CalculadoraRPN();
+var calculadora = new CalculadoraEspecializada();
 
 /**
  * Gestión de eventos keydown
@@ -520,6 +813,42 @@ document.addEventListener('keydown', function(e) {
             break;
         case "o":
             calculadora.ln();
+            break;
+        case "m":
+            calculadora.media();
+            break;
+        case "j":
+            calculadora.moda();
+            break;
+        case "k":
+            calculadora.mediana();
+            break;
+        case "i":
+            calculadora.min();
+            break;
+        case "b":
+            calculadora.max();
+            break;
+        case "w":
+            calculadora.sumatorio();
+            break;
+        case "f":
+            calculadora.desviacionTipica();
+            break;
+        case "z":
+            calculadora.varianza();
+            break;
+        case "h":
+            calculadora.coeficienteVariacion();
+            break;
+        case "_":
+            calculadora.desviacionRespectoMedia();
+            break;
+        case "|":
+            calculadora.percentil1();
+            break;
+        case "#":
+            calculadora.percentil3();
             break;
         case "y":
             calculadora.cambioDeSigno();
