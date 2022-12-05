@@ -20,7 +20,8 @@
         <img src = "multimedia/logo.png" alt="Logo del reproductor de la derecha"/>
     </header>    
     <main>
-        <input type="file" onchange="player.addToPlayList()" multiple/>
+        <label for="file">Cargue sus archivos:</label>
+        <input id="file" type="file" onchange="player.addToPlayList()" multiple/>
         <section>
             <h2>Tus playlists:</h2>
             <label for="general">General:
