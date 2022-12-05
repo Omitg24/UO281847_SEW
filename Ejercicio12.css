@@ -2,7 +2,7 @@
   Omar Teixeira Gonzalez - UO281847
       Documento CSS que contiene
       los estilos definidos para
-      la Tarea 1 del Ejercicio 13
+      la Tarea 1 del Ejercicio 12
       de la práctica de 
       Computación en la nube
 ***********************************/
@@ -37,8 +37,6 @@ article {
   border-style: solid;
   border-color: rgb(96, 96, 96);
   padding: 2em;
-  width:60vw; 
-  height:40vw;
 }
 
 /* Selector Specificity: (0, 0, 1) */
