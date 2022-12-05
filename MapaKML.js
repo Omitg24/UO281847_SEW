@@ -49,18 +49,18 @@ class Lector {
     cargarContenido(archivo) {
         var lector = new FileReader();
         lector.onload = function (evento) {
-            var geojson = JSON.parse(lector.result);            
-            var features = geojson.features;
+            var kml = lector.result;
+            var colors = $("style", kml);
+            var coordinates = $("coordinates", kml);             
             var mapa = new Mapa();
             mapa.initMap();
-            for (var i=0; i<features.length; i++) {
-                var coordenadas = features[i].geometry.coordinates;
-                var descripcion = features[i].properties.description;
+            for (var i=0; i<coordinates.length; i++) {
+                var coordenadas = coordinates[i].innerText.split(",");                
                 var lng = coordenadas[0];                
                 var lat = coordenadas[1];
                 var color = "";
-                if (descripcion.includes("nacimiento")) {
-                    color = "red"; 
+                if (colors[i].innerText.includes("red")) {
+                    color = "red";
                 } else {
                     color = "yellow";
                 }
