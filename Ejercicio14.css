@@ -6,17 +6,19 @@
       de la práctica de 
       Computación en la nube
 ***********************************/
+/*Selector Specificity: (0, 0, 1)*/
 body {
   /*color por defecto*/
-  background-color: #222222;
+  background-color: #444444;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 header {
   /*color hereda de body*/
-  background-color: #383838;
+  background-color: #101010;
   border-radius: 1em;
   padding: 2em;
   display: flex;
@@ -24,6 +26,7 @@ header {
   justify-content: space-around;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 main {
   display: flex;
   flex-direction: column;
@@ -32,9 +35,10 @@ main {
   gap: 0.5em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 footer {
   /*color hereda de body*/
-  background-color: #383838;
+  background-color: #101010;
   border-radius: 1em;
   padding: 2em;
   display: flex;
@@ -44,6 +48,7 @@ footer {
   gap: 1em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 article {
   display: flex;
   flex-direction: row;
@@ -51,6 +56,7 @@ article {
   gap: 1em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 section {
   display: flex;
   flex-direction: column;
@@ -58,33 +64,38 @@ section {
   gap: 1em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 h1 {
   font: 3em Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color: #e84148;
+  color: #ff5e66;
   /*background-color hereda de header*/
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 h2 {
   font: 1.5em Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color: #e84148;
-  background-color: #383838;
+  color: #ff5e66;
+  background-color: #101010;
   border-radius: 0.5em;
   padding: 0.25em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 p, label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color : #cecece;
+  color : #ffffff;
   /*background-color hereda de main*/
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 p {
   font-size: 1.25em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 label {
   font-size: 1.1em;
   display: flex;
@@ -93,23 +104,26 @@ label {
   gap: 0.5em;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 select {
   font-size: 1em;
   color: #ffffff;
-  background-color: #383838;
+  background-color: #101010;
   border-radius: 0.75em;
   border-style: solid;
   border-width: 0.25em; 
-  border-color:#e84148;   
+  border-color:#ff5e66;  
   padding: 0.5em;
   min-height: 20vw;
 }
 
+/*Selector Specificity: (0, 0, 1)*/
 img {
   max-width: 100vw;
   height: auto;
 }
 
+/*Selector Specificity: (0, 1, 1)*/
 option:checked {
   border-radius: 0.5em;
   border-style: solid;
@@ -124,12 +138,13 @@ input[type="file"] {
   /*background-color hereda de main*/
 }
 
+/*Selector Specificity: (0, 1, 1)*/
 input[type="button"] {
   font-size: 1.25em;
   /*color hereda de footer*/
   background-color: #9a9a9a;
   border-radius: 50%;
-  border-color: #e84148;
+  border-color: #ff5e66;
   border-width: 0.3em;
   padding: 0.5em;
   min-width: 3em;
