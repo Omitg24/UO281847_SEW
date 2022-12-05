@@ -31,7 +31,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: center;
   gap: 0.5em;
 }
 
@@ -80,6 +79,7 @@ h2 {
   background-color: #101010;
   border-radius: 0.5em;
   padding: 0.25em;
+  text-align: center;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
