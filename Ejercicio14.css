@@ -18,7 +18,7 @@ body {
 /*Selector Specificity: (0, 0, 1)*/
 header {
   /*color hereda de body*/
-  background-color: #101010;
+  background-color: #000000;
   border-radius: 1em;
   padding: 2em;
   display: flex;
@@ -37,7 +37,7 @@ main {
 /*Selector Specificity: (0, 0, 1)*/
 footer {
   /*color hereda de body*/
-  background-color: #101010;
+  background-color: #000000;
   border-radius: 1em;
   padding: 2em;
   display: flex;
@@ -76,7 +76,7 @@ h2 {
   font: 1.5em Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color: #ff5e66;
-  background-color: #101010;
+  background-color: #000000;
   border-radius: 0.5em;
   padding: 0.25em;
   text-align: center;
@@ -93,6 +93,7 @@ p, label {
 /*Selector Specificity: (0, 0, 1)*/
 p {
   font-size: 1.25em;
+  text-align: center;
 }
 
 /*Selector Specificity: (0, 0, 1)*/
@@ -108,7 +109,7 @@ label {
 select {
   font-size: 1em;
   color: #ffffff;
-  background-color: #101010;
+  background-color: #000000;
   border-radius: 0.75em;
   border-style: solid;
   border-width: 0.25em; 
