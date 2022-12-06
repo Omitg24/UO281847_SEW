@@ -1,34 +1,49 @@
 <!DOCTYPE HTML>
 
-<html lang="es"><head>    
+<html lang="es">
+<head>    
     <!-- Datos que describen el documento -->
-    <meta charset="UTF-8">
-	<meta name="author" content="Omar Teixeira González, UO281847">
-	<meta name="description" content="Documento HTMl realizado para la Tarea 1 del Ejercicio 8 de Computación en el cliente">
-	<meta name="keywords" content="html, css, javascript, ecmascript, json, tiempo, meteorológico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8</title>
-    <link rel="stylesheet" type="text/css" href="Ejercicio8.css">
+    <meta charset="UTF-8" />
+	<meta name ="author" content ="Omar Teixeira González, UO281847" />
+	<meta name ="description" content ="Documento HTMl realizado para la Tarea 1 del Ejercicio 14 de Computación en el cliente" />
+	<meta name ="keywords" content ="html, css, javascript, ecmascript, api, reproductor, multimedia" />
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+    <title>Ejercicio 14</title>    
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
 </head>
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
-        <h1>Tiempo meteorológico</h1>
-    </header>
+        <img src = "multimedia/logo.png" alt="Logo del reproductor de la izquierda"/>
+        <h1>BATPLAYER</h1>
+        <img src = "multimedia/logo.png" alt="Logo del reproductor de la derecha"/>
+    </header>    
     <main>
-        <p><label for="selector">Por favor, seleccione una localización y presione "Mostrar tiempo".</label></p>
-        <select id="selector" onclick="meteo.actualizarCiudad()">
-            <option>Seleccione Localización</option>
-            <option>Oviedo</option>
-            <option>Madrid</option>
-            <option>Barcelona</option>
-            <option>Valencia</option>
-            <option>Andorra</option>
-        </select>
-        <input type="button" value="Mostrar tiempo" onclick="meteo.mostrarTiempo()" disabled="disabled"><article><h2>Datos</h2><img src="https://openweathermap.org/img/w/02d.png" alt="Icono del tiempo"><p>Ciudad: Barcelona</p><p>País: ES</p><p>Latitud: 41.3888 grados</p><p>Longitud: 2.159 grados</p><p>Temperatura: 13.98 grados Celsius</p><p>Temperatura máxima: 15.91 grados Celsius</p><p>Temperatura mínima: 12.67 grados Celsius</p><p>Presión: 1014 milímetros</p><p>Humedad: 78%</p><p>Amanece a las: 8:02:56</p><p>Oscurece a las: 17:22:04</p><p>Dirección del viento: 130  grados</p><p>Velocidad del viento: 3.09 metros/segundo</p><p>Hora de la medida: 16:58:12</p><p>Fecha de la medida: 6/12/2022</p><p>Descripción: algo de nubes</p><p>Visibilidad: 10000 metros</p><p>Nubosidad: 20 %</p></article>
+        <label for="file">Cargue sus archivos:</label>
+        <input id="file" type="file" onchange="player.addToPlayList()" multiple/>
+        <section>
+            <h2>Tus playlists:</h2>
+            <label for="general">General:
+                <select id="general" onchange="player.updatePlaylist(); player.updateIndex(); player.isFavourite();" ondblclick="player.playOrPause()" multiple>
+                </select>
+            </label>
+            <label for="favoritas">Favoritas:
+                <select id="favoritas" onchange="player.updateFavourites(); player.updateIndex(); " ondblclick="player.playOrPause()" multiple>
+                </select>
+            </label>
+        </section>        
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Ejercicio8.js"></script>
-
-</body></html>
+    <footer>
+        <input type="button" value="🕪" onclick="player.muteOrUnmute()"/>
+        <input type="button" value="◼" onclick="player.stop()"/>
+        <input type="button" value="|◀◀" onclick="player.previous()"/>
+        <input type="button" value="▶" onclick="player.playOrPause()"/>        
+        <input type="button" value="▶▶|" onclick="player.next()"/>
+        <input type="button" value="♥" onclick="player.toggleToFavourite()"/>
+        <input type="button" value="✖" onclick="player.clearFavourites()"/>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="Ejercicio14.js"></script>
+</body>
+</html>
