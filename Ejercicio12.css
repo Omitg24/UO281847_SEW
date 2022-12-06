@@ -19,7 +19,7 @@ body{
 /* Selector Specificity: (0, 0, 1) */
 main {
   /*color hereda de body*/
-  background-color: #763030;  
+  background-color: #5c2222; 
   border-radius: 1.5em;
   padding: 1em;
   display: flex;
@@ -31,7 +31,7 @@ main {
 /* Selector Specificity: (0, 0, 1) */
 article {
   /*color hereda de body*/
-  background-color: #9d3e3e;
+  background-color: #8f3636;
   border-radius: 1.5em;
   border-width: 0.5em;
   border-style: solid;
@@ -42,7 +42,7 @@ article {
 /* Selector Specificity: (0, 0, 1) */
 section {
   /*color hereda de body*/
-  background-color: #ae4f4f;
+  background-color: #662525;
   border-radius: 1.5em;
   border-width: 0.5em;
   border-color: #000000;
@@ -93,6 +93,7 @@ pre {
   font-size: 1.1em;
   color : #cecece;
   /*background-color hereda de main*/
+  overflow-x: auto;
 }
 
 /* Selector Specificity: (0, 1, 1) */
