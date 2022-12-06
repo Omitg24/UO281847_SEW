@@ -2,30 +2,28 @@
   Omar Teixeira Gonzalez - UO281847
       Documento CSS que contiene
       los estilos definidos para
-      la Tarea 1 del Ejercicio 12
+      la Tarea 1 del Ejercicio 10
       de la práctica de 
       Computación en la nube
 ***********************************/
-/* Selector Specificity: (0, 0, 1) */
 body{
   /*color por defecto*/
   background-color: #ffbaba;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  gap: 1em;
 }
 
 /* Selector Specificity: (0, 0, 1) */
 main {
   /*color hereda de body*/
-  background-color: #5c2222; 
+  background-color: #5c2222;  
   border-radius: 1.5em;
   padding: 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -37,6 +35,9 @@ article {
   border-style: solid;
   border-color: rgb(96, 96, 96);
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -47,7 +48,7 @@ section {
   border-width: 0.5em;
   border-color: #000000;
   border-style: solid;
-  padding: 2em;
+  padding: 2em;  
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -85,23 +86,62 @@ p, li, label {
   font: 1.25em Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 0.5em;
   color : #cecece;
-  /*background-color hereda de main*/
-}
-
-/* Selector Specificity: (0, 0, 1) */
-pre {
-  font-size: 1.25em;
-  color : #cecece;
-  /*background-color hereda de main*/
-  overflow: auto;
-}
-
-/* Selector Specificity: (0, 0, 1) */
-code {
-  white-space: pre-wrap;
+  /*background-color hereda de header*/
 }
 
 /* Selector Specificity: (0, 1, 1) */
-input {  
-  color : #cecece;
+input, select {
+  font: 1.25em 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color : #3c3c3c;
+  background-color: #d7d7d7;
+  border-radius: 0.75em;
+  padding: 0.45em;  
+  border-color: #778899;
+  border-width: 0.25em;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+table {
+  /*color hereda de body*/
+  background-color: #969696;
+  border-width: 0.25em;
+  border-radius: 1em;  
+  border-style: solid;
+  border-color: #000000;  
+  margin: 0.5em;
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+table th{
+  /*color hereda de body*/
+  background-color: #f37b7b;
+  border-radius: 0.75em;  
+  border-width: 0.15em;
+  border-style: solid;
+  border-color: #000000;
+  padding: 0.4em;
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+table td {
+  /*color hereda de body*/
+  background-color: #b5b5b5;
+  border-radius: 0.75em;  
+  border-width: 0.15em;
+  border-style: solid;
+  border-color: #000000;
+  padding: 0.4em;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input:active, select:active {
+  /*color hereda de body*/
+  background-color: #f37b7b;
+}
+
+/* Selector Specificity: (0, 1, 1) */
+input:disabled, select:disabled{
+  /*color hereda de main*/
+  background-color:#8e8e8e;  
 }
