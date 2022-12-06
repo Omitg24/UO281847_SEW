@@ -57,13 +57,6 @@ class Geolocalizador {
         stringDatos+="<p>Velocidad: "+ this.velocidad +" metros/segundo</p>";
         stringDatos+="</article>";
         $("input").after(stringDatos);
-        this.getMapaEstaticoGoogle();
-    }
-
-    getMapaEstaticoGoogle(){
-        $("img").remove();
-        this.url = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s-l+000(" + this.longitud + "," + this.latitud + ")/" + this.longitud + "," + this.latitud + ",14/800x600?access_token=pk.eyJ1Ijoib21pdGciLCJhIjoiY2xiNWF4OWp4MDE2bDNub2FlbHp3dmZvcyJ9.mQp5NnAxt9CuOm7GuD1ODg";
-        $("article").append("<img src='"+ this.url +"' alt='Mapa estático' />");
     }
 }
 var geo = new Geolocalizador();
