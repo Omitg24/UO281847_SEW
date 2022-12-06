@@ -1,5 +1,5 @@
 class Mapa {
-    initMap() {
+    initMap() {       
         mapboxgl.accessToken = 'pk.eyJ1Ijoib21pdGciLCJhIjoiY2xiNWF4OWp4MDE2bDNub2FlbHp3dmZvcyJ9.mQp5NnAxt9CuOm7GuD1ODg';
         $("header").after("<main id=\"mapa\"></main>");
         var map = new mapboxgl.Map({
@@ -8,21 +8,10 @@ class Mapa {
             center: [-5.693909,43.311065], 
             zoom: 8 
         });
-
-        map.addControl(
-            new mapboxgl.GeolocateControl({
-                positionOptions: {
-                    enableHighAccuracy: true
-                },                
-                trackUserLocation: true,                
-                showUserHeading: true
-            })
-        );    
-            
+        
         const marker1 = new mapboxgl.Marker()
         .setLngLat([-5.693909,43.311065])
-        .addTo(map);
+        .addTo(map)
     }
 }
-
 new Mapa().initMap();
