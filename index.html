@@ -1,0 +1,1610 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>    
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	<meta name="author" content="Omar Teixeira González, UO281847">
+	<meta name="description" content="Documento HTMl realizado para la Tarea 1 del Ejercicio 12 de Computación en el cliente">
+	<meta name="keywords" content="html, css, javascript, ecmascript, xml, txt, json, lector">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Carga de archivos (TXT, JSON y XML)</h1>
+    </header>    
+    <main>
+        <p>Aquí podrá cargar 3 tipos archivos (txt, json y xml) y podrá ver sus tamaños y contenido, para ello, cargue los archivos que quiera seleccionando el botón inferior.</p><p>Este navegador soporta el API File</p>
+        <label for="file">Cargue sus archivos:</label>
+        <input id="file" type="file" onchange="lector.calcularTamañoArchivos(); lector.cargarFicheros();" multiple=""><article><h2>Datos de los archivos cargados</h2><p>Número de archivos seleccionados: 4</p><p>Tamaño de los archivos seleccionados: 50354 bytes</p><p>Lista de archivos:</p><ol><li>Archivo: Ejemplo.json, Tamaño: 17169 bytes , Tipo: application/json</li><li>Archivo: Ejemplo.txt, Tamaño: 11047 bytes , Tipo: text/plain</li><li>Archivo: Ejemplo.xml, Tamaño: 16456 bytes , Tipo: text/xml</li><li>Archivo: Prueba.txt, Tamaño: 5682 bytes , Tipo: text/plain</li></ol><section><h3>Contenido de los archivos cargados</h3><p>Contenido del fichero "Ejemplo.json":</p><pre>{
+    "persona": {
+      "datos": {
+        "nombre": "Omar",
+        "apellidos": "Teixeira González",
+        "fnacimiento": "2002-03-24",
+        "lnacimiento": {
+          "lnombre": "Oviedo",
+          "coordenadas": {
+            "longitud": 43.356923,
+            "latitud": -5.86788,
+            "altitud": 242
+          }
+        },
+        "lresidencia": {
+          "lnombre": "Madrid",
+          "coordenadas": {
+            "longitud": 40.4253205,
+            "latitud": -3.7127347,
+            "altitud": 205
+          }
+        },
+        "fotografias": {
+          "fotografia": [
+            {
+              "enlace": "husky_adulto.png"
+            },
+            {
+              "enlace": "golden_cachorro.png"
+            },
+            {
+              "enlace": "husky_cachorro.png"
+            },
+            {
+              "enlace": "golden_adulto.png"
+            }
+          ]
+        },
+        "videos": {
+          "video": [
+            {
+              "enlace": "https://www.youtube.com/shorts/WTpyXOKXoN0"
+            },
+            {
+              "enlace": "https://www.youtube.com/shorts/FVz9IiBqlgY"
+            }
+          ]
+        },
+        "comentario": "Estudiante de Ingeniería Informática"
+      },
+      "persona": [
+        {
+          "datos": {
+            "nombre": "Alba",
+            "apellidos": "Francos Ablanedo",
+            "fnacimiento": "2002-06-14",
+            "lnacimiento": {
+              "lnombre": "Oviedo",
+              "coordenadas": {
+                "longitud": 43.356923,
+                "latitud": -5.86788,
+                "altitud": 242
+              }
+            },
+            "lresidencia": {
+              "lnombre": "Madrid",
+              "coordenadas": {
+                "longitud": 40.4253205,
+                "latitud": -3.7127347,
+                "altitud": 205
+              }
+            },
+            "fotografias": {
+              "fotografia": {
+                "enlace": "samoyedo.png"
+              }
+            },
+            "videos": {
+              "video": [
+                {
+                  "enlace": "https://www.youtube.com/shorts/zbFU91cFTjk"
+                },
+                {
+                  "enlace": "https://www.youtube.com/shorts/zT6bNYBxyFs"
+                }
+              ]
+            },
+            "comentario": "Estudiante de Logopedia"
+          },
+          "persona": [
+            {
+              "datos": {
+                "nombre": "Raúl",
+                "apellidos": "Fernández España",
+                "fnacimiento": "2001-04-10",
+                "lnacimiento": {
+                  "lnombre": "Pola de Laviana",
+                  "coordenadas": {
+                    "longitud": 43.252652,
+                    "latitud": -5.574053,
+                    "altitud": 285
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Valencia",
+                  "coordenadas": {
+                    "longitud": 39.4077643,
+                    "latitud": -0.4315506,
+                    "altitud": 285
+                  }
+                },
+                "fotografias": {
+                  "fotografia": {
+                    "enlace": "eucalipto.png"
+                  }
+                },
+                "videos": {
+                  "video": [
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=nbfLumrZhm4"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=b5E1hko05t4"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=S6xNDVYBU1k"
+                    }
+                  ]
+                },
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "Carla",
+                "apellidos": "Muñiz Testón",
+                "fnacimiento": "2001-04-03",
+                "lnacimiento": {
+                  "lnombre": "Oviedo",
+                  "coordenadas": {
+                    "longitud": 43.356923,
+                    "latitud": -5.86788,
+                    "altitud": 242
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Valencia",
+                  "coordenadas": {
+                    "longitud": 39.4077643,
+                    "latitud": -0.4315506,
+                    "altitud": 285
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "corgi_corriendo.png"
+                    },
+                    {
+                      "enlace": "corgi_sonriendo.png"
+                    }
+                  ]
+                },
+                "videos": "",
+                "comentario": "Estudiante de Derecho"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "Luis Manuel",
+                "apellidos": "Solares García",
+                "fnacimiento": "2002-09-03",
+                "lnacimiento": {
+                  "lnombre": "Pola de Laviana",
+                  "coordenadas": {
+                    "longitud": 43.252652,
+                    "latitud": -5.574053,
+                    "altitud": 285
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Salamanca",
+                  "coordenadas": {
+                    "longitud": 40.9634372,
+                    "latitud": -5.6867216,
+                    "altitud": 20
+                  }
+                },
+                "fotografias": {
+                  "fotografia": {
+                    "enlace": "goku.png"
+                  }
+                },
+                "videos": "",
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            }
+          ]
+        },
+        {
+          "datos": {
+            "nombre": "Israel",
+            "apellidos": "Solís Iglesias",
+            "fnacimiento": "2002-08-03",
+            "lnacimiento": {
+              "lnombre": "Villa",
+              "coordenadas": {
+                "longitud": 43.328117,
+                "latitud": -5.721802,
+                "altitud": 199
+              }
+            },
+            "lresidencia": {
+              "lnombre": "Andorra",
+              "coordenadas": {
+                "longitud": 42.5421978,
+                "latitud": 1.457612,
+                "altitud": 281
+              }
+            },
+            "fotografias": {
+              "fotografia": {
+                "enlace": "tortugas.png"
+              }
+            },
+            "videos": "",
+            "comentario": "Estudiante de Ingeniería Informática"
+          },
+          "persona": [
+            {
+              "datos": {
+                "nombre": "Adrián",
+                "apellidos": "Alves Morales",
+                "fnacimiento": "2002-06-08",
+                "lnacimiento": {
+                  "lnombre": "Avilés",
+                  "coordenadas": {
+                    "longitud": 43.5554436,
+                    "latitud": -5.9222466,
+                    "altitud": 20
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Málaga",
+                  "coordenadas": {
+                    "longitud": 36.7182015,
+                    "latitud": -4.5193062,
+                    "altitud": 20
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "final_fantasy_1.png"
+                    },
+                    {
+                      "enlace": "final_fantasy_2.png"
+                    }
+                  ]
+                },
+                "videos": {
+                  "video": [
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=rr6LoM9h4xw"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=FB7L6_05UqY"
+                    }
+                  ]
+                },
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "David",
+                "apellidos": "Warzynski Abril",
+                "fnacimiento": "2001-08-08",
+                "lnacimiento": {
+                  "lnombre": "Villa",
+                  "coordenadas": {
+                    "longitud": 43.328117,
+                    "latitud": -5.721802,
+                    "altitud": 199
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Villaescusa",
+                  "coordenadas": {
+                    "longitud": 43.3623236,
+                    "latitud": -3.8907856,
+                    "altitud": 218
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "sova.png"
+                    },
+                    {
+                      "enlace": "sova_valorant.png"
+                    },
+                    {
+                      "enlace": "sova_arma.png"
+                    }
+                  ]
+                },
+                "videos": {
+                  "video": [
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=K6FrFhlAKOs"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=Yp7OcIeo6CU"
+                    }
+                  ]
+                },
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "Victor",
+                "apellidos": "Sánchez Martín",
+                "fnacimiento": "2002-04-10",
+                "lnacimiento": {
+                  "lnombre": "Vallecas",
+                  "coordenadas": {
+                    "longitud": 40.3514257,
+                    "latitud": -3.6526058,
+                    "altitud": 199
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Madrid",
+                  "coordenadas": {
+                    "longitud": 40.4379332,
+                    "latitud": -3.7495759,
+                    "altitud": 20
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "nikola_tesla.png"
+                    },
+                    {
+                      "enlace": "nikola_tesla_apoyado.png"
+                    },
+                    {
+                      "enlace": "nikola_tesla_bombilla.png"
+                    }
+                  ]
+                },
+                "videos": {
+                  "video": [
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=x4hh2FhUzyQ"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=2nOW8NtM858"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=oESNo52Z-vo"
+                    }
+                  ]
+                },
+                "comentario": "Estudiante de Ingeniería Industrial"
+              }
+            }
+          ]
+        },
+        {
+          "datos": {
+            "nombre": "Guillermo",
+            "apellidos": "Pulido Fernández",
+            "fnacimiento": "2002-08-10",
+            "lnacimiento": {
+              "lnombre": "Avilés",
+              "coordenadas": {
+                "longitud": 43.5554436,
+                "latitud": -5.9222466,
+                "altitud": 20
+              }
+            },
+            "lresidencia": {
+              "lnombre": "Barcelona",
+              "coordenadas": {
+                "longitud": 41.3926467,
+                "latitud": 2.0701499,
+                "altitud": 20
+              }
+            },
+            "fotografias": {
+              "fotografia": [
+                {
+                  "enlace": "yuumi.png"
+                },
+                {
+                  "enlace": "yuumi_cerca.png"
+                }
+              ]
+            },
+            "videos": {
+              "video": {
+                "enlace": "https://www.youtube.com/watch?v=N9K717CSljE"
+              }
+            },
+            "comentario": "Estudiante de Ingeniería Informática"
+          },
+          "persona": [
+            {
+              "datos": {
+                "nombre": "Raquel",
+                "apellidos": "Suárez Álvarez",
+                "fnacimiento": "2002-04-09",
+                "lnacimiento": {
+                  "lnombre": "Oviedo",
+                  "coordenadas": {
+                    "longitud": 43.3694855,
+                    "latitud": -5.8661673,
+                    "altitud": 242
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Lisboa",
+                  "coordenadas": {
+                    "longitud": 38.7436214,
+                    "latitud": -9.1952225,
+                    "altitud": 25
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "wanda.png"
+                    },
+                    {
+                      "enlace": "wandavision.png"
+                    },
+                    {
+                      "enlace": "scarletwitch.png"
+                    }
+                  ]
+                },
+                "videos": {
+                  "video": {
+                    "enlace": "https://www.youtube.com/watch?v=UuhqbcMNrME"
+                  }
+                },
+                "comentario": "Estudiante de módulo en Informática"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "Carlos",
+                "apellidos": "Díez Fernández",
+                "fnacimiento": "2002-04-09",
+                "lnacimiento": {
+                  "lnombre": "Oviedo",
+                  "coordenadas": {
+                    "longitud": 43.3862411,
+                    "latitud": -5.8311886,
+                    "altitud": 242
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Catalunya",
+                  "coordenadas": {
+                    "longitud": 41.686789,
+                    "latitud": 0.6249296,
+                    "altitud": 242
+                  }
+                },
+                "fotografias": {
+                  "fotografia": [
+                    {
+                      "enlace": "zorro.png"
+                    },
+                    {
+                      "enlace": "zorro_mirando_al_sol.png"
+                    }
+                  ]
+                },
+                "videos": {
+                  "video": [
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=j_Ps9pugPl4"
+                    },
+                    {
+                      "enlace": "https://www.youtube.com/watch?v=hHwcHhLmLzw"
+                    }
+                  ]
+                },
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            },
+            {
+              "datos": {
+                "nombre": "Antonio",
+                "apellidos": "Castro Álvarez",
+                "fnacimiento": "2002-09-09",
+                "lnacimiento": {
+                  "lnombre": "Avilés",
+                  "coordenadas": {
+                    "longitud": 43.5454341,
+                    "latitud": -5.9390375,
+                    "altitud": 20
+                  }
+                },
+                "lresidencia": {
+                  "lnombre": "Cádiz",
+                  "coordenadas": {
+                    "longitud": 36.4719901,
+                    "latitud": -6.3643009,
+                    "altitud": 20
+                  }
+                },
+                "fotografias": {
+                  "fotografia": {
+                    "enlace": "el_jincho.png"
+                  }
+                },
+                "videos": {
+                  "video": {
+                    "enlace": "https://www.youtube.com/watch?v=rHi7yNAf_xE"
+                  }
+                },
+                "comentario": "Estudiante de Ingeniería Informática"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }</pre><p>Contenido del fichero "Ejemplo.txt":</p><pre>Nombre: Omar
+Apellidos: Teixeira González
+FNacimiento: 2002-03-24
+LNacimiento:
+    LNombre: Oviedo
+    Coordenadas:
+        Longitud: 43.356923
+        Latitud: -5.867880
+        Altitud: 242
+LResidencia:
+    LNombre: Madrid
+    Coordenadas:
+        Longitud: 40.4253205
+        Latitud: -3.7127347
+        Altitud: 205
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Omar sobre Husky adulto
+        Enlace: husky_adulto.png
+    Fotografía:
+        Descripción: Foto de portada de Omar sobre Golden retriever cachorro
+        Enlace: golden_cachorro.png
+    Fotografía:
+        Descripción: Foto de muestra de Omar sobre Husky cachorro
+        Enlace: husky_cachorro.png
+    Fotografía:
+        Descripción: Foto de anexo de Omar sobre Golden retriever adulto
+        Enlace: golden_adulto.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Omar sobre  husky cachorro aullando
+        Enlace: https://www.youtube.com/shorts/WTpyXOKXoN0
+    Vídeo:
+        Descripción: Video de Omar sobre  Golden retrievers
+        Enlace: https://www.youtube.com/shorts/FVz9IiBqlgY
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Alba
+Apellidos: Francos Ablanedo
+FNacimiento: 2002-06-14
+LNacimiento:
+    LNombre: Oviedo
+    Coordenadas:
+        Longitud: 43.356923
+        Latitud: -5.867880
+        Altitud: 242
+LResidencia:
+    LNombre: Madrid
+    Coordenadas:
+        Longitud: 40.4253205
+        Latitud: -3.7127347
+        Altitud: 205
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Alba sobre Samoyedo
+        Enlace: samoyedo.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Alba sobre Samoyedo
+        Enlace: https://www.youtube.com/shorts/zbFU91cFTjk
+    Vídeo:
+        Descripción: Video de Alba sobre Samoyedo feliz
+        Enlace: https://www.youtube.com/shorts/zT6bNYBxyFs
+Comentario: Estudiante de Logopedia
+
+Nombre: Raúl
+Apellidos: Fernández España
+FNacimiento: 2001-04-10
+LNacimiento:
+    LNombre: Pola de Laviana
+    Coordenadas:
+        Longitud: 43.252652
+        Latitud: -5.574053
+        Altitud: 285
+LResidencia:
+    LNombre: Valencia
+    Coordenadas:
+        Longitud: 39.4077643
+        Latitud: -0.4315506
+        Altitud: 285
+Fotografías:
+    Fotografía: 
+        Descripción: Foto de perfil de Raúl sobre eucalipto
+        Enlace: eucalipto.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Raúl sobre como cuidar eucaliptos
+        Enlace: https://www.youtube.com/watch?v=nbfLumrZhm4
+    Vídeo:
+        Descripción: Video de Raúl sobre como cuidar eucaliptos en interior
+        Enlace: https://www.youtube.com/watch?v=b5E1hko05t4
+    Vídeo:
+        Descripción: Video de Raúl sobre como cuidar eucaliptos en interior
+        Enlace: https://www.youtube.com/watch?v=S6xNDVYBU1k
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Carla
+Apellidos: Muñiz Testón
+FNacimiento: 2001-04-03
+LNacimiento:
+    LNombre: Oviedo
+    Coordenadas:
+        Longitud: 43.356923
+        Latitud: -5.867880
+        Altitud: 242
+LResidencia:
+    LNombre: Valencia
+    Coordenadas:
+        Longitud: 39.4077643
+        Latitud: -0.4315506
+        Altitud: 285
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Carla sobre Corgi corriendo
+        Enlace: corgi_corriendo.png
+    Fotografía:
+        Descripción: Foto de perfil de Carla sobre Corgi corriendo
+        Enlace: corgi_sonriendo.png
+Vídeos:
+Comentario: Estudiante de Derecho
+
+Nombre: Luis Manuel
+Apellidos: Solares García
+FNacimiento: 2002-09-03
+LNacimiento:
+    LNombre: Pola de Laviana
+    Coordenadas:
+        Longitud: 43.252652
+        Latitud: -5.574053
+        Altitud: 285
+LResidencia:
+    LNombre: Salamanca
+    Coordenadas:
+        Longitud: 40.9634372
+        Latitud: -5.6867216
+        Altitud: 20
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Luisma sobre Goku
+        Enlace: goku.png
+Vídeos:
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Israel
+Apellidos: Solís Iglesias
+FNacimiento: 2002-08-03
+LNacimiento:
+    LNombre: Villa
+    Coordenadas:
+        Longitud: 43.328117
+        Latitud: -5.721802
+        Altitud: 199
+LResidencia:
+    LNombre: Andorra
+    Coordenadas:
+        Longitud: 42.5421978
+        Latitud: 1.457612
+        Altitud: 281
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Israel sobre tortugas
+        Enlace: tortugas.png
+Vídeos:
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Adrián
+Apellidos: Alves Morales
+FNacimiento: 2002-06-08
+LNacimiento:
+    LNombre: Avilés
+    Coordenadas:
+        Longitud: 43.5554436
+        Latitud: -5.9222466
+        Altitud: 20
+LResidencia:
+    LNombre: Málaga
+    Coordenadas:
+        Longitud: 36.7182015
+        Latitud: -4.5193062
+        Altitud: 20
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Alves sobre Final Fantasy XIV
+        Enlace: final_fantasy_1.png
+    Fotografía:
+        Descripción: Foto de portada de Alves sobre el personaje de Final Fantasy XIV
+        Enlace: final_fantasy_2.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Alves sobre gameplay no comentado de Final Fantasy XIV
+        Enlace: https://www.youtube.com/watch?v=rr6LoM9h4xw
+    Vídeo:
+        Descripción: Video de Alves sobre gameplay no comentado del DLC de Final Fantasy XIV
+        Enlace: https://www.youtube.com/watch?v=FB7L6_05UqY
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: David
+Apellidos: Warzynski Abril
+FNacimiento: 2001-08-08
+LNacimiento:
+    LNombre: Villa
+    Coordenadas:
+        Longitud: 43.328117
+        Latitud: -5.721802
+        Altitud: 199
+LResidencia:
+    LNombre: Villaescusa
+    Coordenadas:
+        Longitud: 43.3623236
+        Latitud: -3.8907856
+        Altitud: 218
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de David sobre Sova con arco
+        Enlace: sova.png
+    Fotografía:
+        Descripción: Foto de portada de David sobre Sova de Valorant
+        Enlace: sova_valorant.png
+    Fotografía:
+        Descripción: Foto de muestra de David sobre Sova con arma de fuego
+        Enlace: sova_arma.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de David sobre gameplay no comentado de Sova
+        Enlace: https://www.youtube.com/watch?v=K6FrFhlAKOs
+    Vídeo:
+        Descripción: Video de David sobre gameplay no comentado de Sova 2
+        Enlace: https://www.youtube.com/watch?v=Yp7OcIeo6CU
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Victor
+Apellidos: Sánchez Martín
+FNacimiento: 2002-04-10
+LNacimiento:
+    LNombre: Vallecas
+    Coordenadas:
+        Longitud: 40.3514257
+        Latitud: -3.6526058
+        Altitud: 199
+LResidencia:
+    LNombre: Madrid
+    Coordenadas:
+        Longitud: 40.4379332
+        Latitud: -3.7495759
+        Altitud: 20
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Victor sobre Nikola Tesla
+        Enlace: nikola_tesla.png
+    Fotografía:
+        Descripción: Foto de portada de Victor sobre Nikola Tesla apoyado
+        Enlace: nikola_tesla_apoyado.png
+    Fotografía:
+        Descripción: Foto de muestra de Victor sobre Nikola Tesla con bombilla
+        Enlace: nikola_tesla_bombilla.png
+Vídeos:
+    Vídeo:
+        Descripción: Video documental de Victor sobre Nikola Tesla
+        Enlace: https://www.youtube.com/watch?v=x4hh2FhUzyQ
+Comentario: Estudiante de Ingeniería Industrial
+
+Nombre: Guillermo
+Apellidos: Pulido Fernández
+FNacimiento: 2002-08-10
+LNacimiento: 
+    LNombre: Avilés
+    Coordenadas:
+        Longitud: 43.5554436
+        Latitud: -5.9222466
+        Altitud: 20
+LResidencia:
+    LNombre: Barcelona
+    Coordenadas:
+        Longitud: 41.3926467
+        Latitud: 2.0701499
+        Altitud: 20
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Guillermo sobre Yuumi de carga
+        Enlace: yuumi.png
+    Fotografía:
+        Descripción: Foto de portada de Guillermo sobre Yuumi
+        Enlace: yuumi_cerca.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Guillermo sobre gameplay no comentado de Yuumi
+        Enlace: https://www.youtube.com/watch?v=N9K717CSljE
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Raquel
+Apellidos: Suárez Álvarez
+FNacimiento: 2002-04-09
+LNacimiento:
+    LNombre: Oviedo
+    Coordenadas:
+        Longitud: 43.3694855
+        Latitud: -5.8661673
+        Altitud: 242
+LResidencia:
+    LNombre: Lisboa
+    Coordenadas:
+        Longitud: 38.7436214
+        Latitud: -9.1952225
+        Altitud: 25
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Raquel sobre Wanda Maximoff
+        Enlace: wanda.png
+    Fotografía:
+        Descripción: Foto de portada de Raquel sobre Wanda y Visión
+        Enlace: wandavision.png
+    Fotografía:
+        Descripción: Foto de muestra de Raquel sobre la Bruja Escarlata
+        Enlace: scarletwitch.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Raquel sobre el trailer de Wandavision
+        Enlace: https://www.youtube.com/watch?v=UuhqbcMNrME
+Comentario: Estudiante de módulo en Informática
+
+Nombre: Carlos
+Apellidos: Díez Fernández
+FNacimiento: 2002-04-09
+LNacimiento:
+    LNombre: Oviedo
+    Coordenadas:
+        Longitud: 43.3862411
+        Latitud: -5.8311886
+        Altitud: 242
+LResidencia:
+    LNombre: Catalunya
+    Coordenadas:
+        Longitud: 41.686789
+        Latitud: 0.6249296
+        Altitud: 242
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Carlos sobre un zorro
+        Enlace: zorro.png
+    Fotografía:
+        Descripción: Foto de portada de Carlos sobre un zorro mirando al sol
+        Enlace: zorro_mirando_al_sol.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Carlos sobre la zorrita Juniper
+        Enlace: https://www.youtube.com/watch?v=j_Ps9pugPl4
+    Vídeo:
+        Descripción: Video de Carlos sobre el rescate de la zorrita Arizona
+        Enlace: https://www.youtube.com/watch?v=hHwcHhLmLzw
+Comentario: Estudiante de Ingeniería Informática
+
+Nombre: Antonio
+Apellidos: Castro Álvarez
+FNacimiento: 2002-09-09
+LNacimiento:
+    LNombre: Avilés
+    Coordenadas: 
+        Longitud: 43.5454341
+        Latitud: -5.9390375
+        Altitud: 20
+LResidencia:
+    LNombre: Cádiz
+    Coordenadas:
+        Longitud: 36.4719901
+        Latitud: -6.3643009
+        Altitud: 20
+Fotografías:
+    Fotografía:
+        Descripción: Foto de perfil de Antonio sobre El Jincho
+        Enlace: el_jincho.png
+Vídeos:
+    Vídeo:
+        Descripción: Video de Antonio sobre una canción de El Jincho
+        Enlace: https://www.youtube.com/watch?v=rHi7yNAf_xE
+Comentario: Estudiante de Ingeniería Informática</pre><p>Contenido del fichero "Ejemplo.xml":</p><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;persona 
+xmlns="https://uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://uniovi.es SocialNetwork.xsd"
+&gt;
+	&lt;datos&gt;
+		&lt;nombre&gt;Omar&lt;/nombre&gt;
+		&lt;apellidos&gt;Teixeira González&lt;/apellidos&gt;
+		&lt;fnacimiento&gt;2002-03-24&lt;/fnacimiento&gt;
+		&lt;lnacimiento&gt;
+			&lt;lnombre&gt;Oviedo&lt;/lnombre&gt;
+			&lt;coordenadas&gt;
+				&lt;longitud&gt;43.356923&lt;/longitud&gt;
+				&lt;latitud&gt;-5.867880&lt;/latitud&gt;
+				&lt;altitud&gt;242&lt;/altitud&gt;
+			&lt;/coordenadas&gt;
+		&lt;/lnacimiento&gt;
+		&lt;lresidencia&gt;
+			&lt;lnombre&gt;Madrid&lt;/lnombre&gt;
+			&lt;coordenadas&gt;
+				&lt;longitud&gt;40.4253205&lt;/longitud&gt;
+				&lt;latitud&gt;-3.7127347&lt;/latitud&gt;
+				&lt;altitud&gt;205&lt;/altitud&gt;
+			&lt;/coordenadas&gt;
+		&lt;/lresidencia&gt;
+		&lt;fotografias&gt;
+			&lt;fotografia descripcion="Foto de perfil de Omar sobre Husky adulto"&gt;
+				&lt;enlace&gt;husky_adulto.png&lt;/enlace&gt;
+			&lt;/fotografia&gt;
+			&lt;fotografia descripcion="Foto de portada de Omar sobre Golden retriever cachorro"&gt;
+				&lt;enlace&gt;golden_cachorro.png&lt;/enlace&gt;				
+			&lt;/fotografia&gt;
+			&lt;fotografia descripcion="Foto de muestra de Omar sobre Husky cachorro"&gt;
+				&lt;enlace&gt;husky_cachorro.png&lt;/enlace&gt;				
+			&lt;/fotografia&gt;
+			&lt;fotografia descripcion="Foto de anexo de Omar sobre Golden retriever adulto"&gt;
+				&lt;enlace&gt;golden_adulto.png&lt;/enlace&gt;				
+			&lt;/fotografia&gt;
+		&lt;/fotografias&gt;
+		&lt;videos&gt;
+			&lt;video descripcion="Video de Omar sobre  husky cachorro aullando"&gt;
+				&lt;enlace&gt;https://www.youtube.com/shorts/WTpyXOKXoN0&lt;/enlace&gt;				
+			&lt;/video&gt;
+			&lt;video descripcion="Video de Omar sobre  Golden retrievers"&gt;
+				&lt;enlace&gt;https://www.youtube.com/shorts/FVz9IiBqlgY&lt;/enlace&gt;				
+			&lt;/video&gt;
+		&lt;/videos&gt;
+		&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+	&lt;/datos&gt;
+	&lt;persona&gt;
+		&lt;datos&gt;
+			&lt;nombre&gt;Alba&lt;/nombre&gt;
+			&lt;apellidos&gt;Francos Ablanedo&lt;/apellidos&gt;
+			&lt;fnacimiento&gt;2002-06-14&lt;/fnacimiento&gt;
+			&lt;lnacimiento&gt;
+				&lt;lnombre&gt;Oviedo&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;43.356923&lt;/longitud&gt;
+					&lt;latitud&gt;-5.867880&lt;/latitud&gt;
+					&lt;altitud&gt;242&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lnacimiento&gt;
+			&lt;lresidencia&gt;
+				&lt;lnombre&gt;Madrid&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;40.4253205&lt;/longitud&gt;
+					&lt;latitud&gt;-3.7127347&lt;/latitud&gt;
+					&lt;altitud&gt;205&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lresidencia&gt;
+			&lt;fotografias&gt;
+				&lt;fotografia descripcion="Foto de perfil de Alba sobre Samoyedo"&gt;				
+					&lt;enlace&gt;samoyedo.png&lt;/enlace&gt;					
+				&lt;/fotografia&gt;
+			&lt;/fotografias&gt;
+			&lt;videos&gt;
+				&lt;video descripcion="Video de Alba sobre Samoyedo"&gt;
+					&lt;enlace&gt;https://www.youtube.com/shorts/zbFU91cFTjk&lt;/enlace&gt;
+					
+				&lt;/video&gt;
+				&lt;video descripcion="Video de Alba sobre Samoyedo feliz"&gt;
+					&lt;enlace&gt;https://www.youtube.com/shorts/zT6bNYBxyFs&lt;/enlace&gt;					
+				&lt;/video&gt;
+			&lt;/videos&gt;
+			&lt;comentario&gt;Estudiante de Logopedia&lt;/comentario&gt;
+		&lt;/datos&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Raúl&lt;/nombre&gt;
+				&lt;apellidos&gt;Fernández España&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2001-04-10&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Pola de Laviana&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.252652&lt;/longitud&gt;
+						&lt;latitud&gt;-5.574053&lt;/latitud&gt;
+						&lt;altitud&gt;285&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Valencia&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;39.4077643&lt;/longitud&gt;
+						&lt;latitud&gt;-0.4315506&lt;/latitud&gt;
+						&lt;altitud&gt;285&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Raúl sobre eucalipto"&gt;
+						&lt;enlace&gt;eucalipto.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de Raúl sobre como cuidar eucaliptos"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=nbfLumrZhm4&lt;/enlace&gt;						
+					&lt;/video&gt;
+					&lt;video descripcion="Video de Raúl sobre como cuidar eucaliptos en interior"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=b5E1hko05t4&lt;/enlace&gt;						
+					&lt;/video&gt;
+					&lt;video descripcion="Video de Raúl sobre información sobre los eucaliptos"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=S6xNDVYBU1k&lt;/enlace&gt;
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Carla&lt;/nombre&gt;
+				&lt;apellidos&gt;Muñiz Testón&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2001-04-03&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Oviedo&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.356923&lt;/longitud&gt;
+						&lt;latitud&gt;-5.867880&lt;/latitud&gt;
+						&lt;altitud&gt;242&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Valencia&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;39.4077643&lt;/longitud&gt;
+						&lt;latitud&gt;-0.4315506&lt;/latitud&gt;
+						&lt;altitud&gt;285&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Carla sobre Corgi corriendo"&gt;
+						&lt;enlace&gt;corgi_corriendo.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de Carla sobre Corgi corriendo"&gt;
+						&lt;enlace&gt;corgi_sonriendo.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;					
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Derecho&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Luis Manuel&lt;/nombre&gt;
+				&lt;apellidos&gt;Solares García&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-09-03&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Pola de Laviana&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.252652&lt;/longitud&gt;
+						&lt;latitud&gt;-5.574053&lt;/latitud&gt;
+						&lt;altitud&gt;285&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Salamanca&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;40.9634372&lt;/longitud&gt;
+						&lt;latitud&gt;-5.6867216&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Luisma sobre Goku"&gt;
+						&lt;enlace&gt;goku.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+	&lt;/persona&gt;
+	&lt;persona&gt;
+		&lt;datos&gt;
+			&lt;nombre&gt;Israel&lt;/nombre&gt;
+			&lt;apellidos&gt;Solís Iglesias&lt;/apellidos&gt;
+			&lt;fnacimiento&gt;2002-08-03&lt;/fnacimiento&gt;
+			&lt;lnacimiento&gt;
+				&lt;lnombre&gt;Villa&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;43.328117&lt;/longitud&gt;
+					&lt;latitud&gt;-5.721802&lt;/latitud&gt;
+					&lt;altitud&gt;199&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lnacimiento&gt;
+			&lt;lresidencia&gt;
+				&lt;lnombre&gt;Andorra&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;42.5421978&lt;/longitud&gt;
+					&lt;latitud&gt;1.457612&lt;/latitud&gt;
+					&lt;altitud&gt;281&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lresidencia&gt;
+			&lt;fotografias&gt;
+				&lt;fotografia descripcion="Foto de perfil de Israel sobre tortugas"&gt;
+					&lt;enlace&gt;tortugas.png&lt;/enlace&gt;					
+				&lt;/fotografia&gt;
+			&lt;/fotografias&gt;
+			&lt;videos&gt;
+			&lt;/videos&gt;
+			&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+		&lt;/datos&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Adrián&lt;/nombre&gt;
+				&lt;apellidos&gt;Alves Morales&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-06-08&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Avilés&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.5554436&lt;/longitud&gt;
+						&lt;latitud&gt;-5.9222466&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Málaga&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;36.7182015&lt;/longitud&gt;
+						&lt;latitud&gt;-4.5193062&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Alves sobre Final Fantasy XIV"&gt;
+						&lt;enlace&gt;final_fantasy_1.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de Alves sobre el personaje de Final Fantasy XIV"&gt;
+						&lt;enlace&gt;final_fantasy_2.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de Alves sobre gameplay no comentado de Final Fantasy XIV"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=rr6LoM9h4xw&lt;/enlace&gt;
+					&lt;/video&gt;
+					&lt;video descripcion="Video de Alves sobre gameplay no comentado del DLC de Final Fantasy XIV"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=FB7L6_05UqY&lt;/enlace&gt;
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;David&lt;/nombre&gt;
+				&lt;apellidos&gt;Warzynski Abril&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2001-08-08&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Villa&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.328117&lt;/longitud&gt;
+						&lt;latitud&gt;-5.721802&lt;/latitud&gt;
+						&lt;altitud&gt;199&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Villaescusa&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.3623236&lt;/longitud&gt;
+						&lt;latitud&gt;-3.8907856&lt;/latitud&gt;
+						&lt;altitud&gt;218&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de David sobre Sova con arco"&gt;
+						&lt;enlace&gt;sova.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de David sobre Sova de Valorant"&gt;
+						&lt;enlace&gt;sova_valorant.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de muestra de David sobre Sova con arma de fuego"&gt;
+						&lt;enlace&gt;sova_arma.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de David sobre gameplay no comentado de Sova"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=K6FrFhlAKOs&lt;/enlace&gt;						
+					&lt;/video&gt;
+					&lt;video descripcion="Video de David sobre gameplay no comentado de Sova 2"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=Yp7OcIeo6CU&lt;/enlace&gt;						
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Victor&lt;/nombre&gt;
+				&lt;apellidos&gt;Sánchez Martín&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-04-10&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Vallecas&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;40.3514257&lt;/longitud&gt;
+						&lt;latitud&gt;-3.6526058&lt;/latitud&gt;
+						&lt;altitud&gt;199&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Madrid&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;40.4379332&lt;/longitud&gt;
+						&lt;latitud&gt;-3.7495759&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Victor sobre Nikola Tesla"&gt;
+						&lt;enlace&gt;nikola_tesla.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de Victor sobre Nikola Tesla apoyado"&gt;
+						&lt;enlace&gt;nikola_tesla_apoyado.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de muestra de Victor sobre Nikola Tesla con bombilla"&gt;
+						&lt;enlace&gt;nikola_tesla_bombilla.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video documental de Victor sobre Nikola Tesla"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=x4hh2FhUzyQ&lt;/enlace&gt;
+					&lt;/video&gt;
+					&lt;video descripcion="Video Draw my life de Victor sobre Nikola Tesla"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=2nOW8NtM858&lt;/enlace&gt;						
+					&lt;/video&gt;
+					&lt;video descripcion="Video de Victor sobre la biografía de Nikola Tesla"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=oESNo52Z-vo&lt;/enlace&gt;
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Industrial&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+	&lt;/persona&gt;
+	&lt;persona&gt;
+		&lt;datos&gt;
+			&lt;nombre&gt;Guillermo&lt;/nombre&gt;
+			&lt;apellidos&gt;Pulido Fernández&lt;/apellidos&gt;
+			&lt;fnacimiento&gt;2002-08-10&lt;/fnacimiento&gt;
+			&lt;lnacimiento&gt;
+				&lt;lnombre&gt;Avilés&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;43.5554436&lt;/longitud&gt;
+					&lt;latitud&gt;-5.9222466&lt;/latitud&gt;
+					&lt;altitud&gt;20&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lnacimiento&gt;
+			&lt;lresidencia&gt;
+				&lt;lnombre&gt;Barcelona&lt;/lnombre&gt;
+				&lt;coordenadas&gt;
+					&lt;longitud&gt;41.3926467&lt;/longitud&gt;
+					&lt;latitud&gt;2.0701499&lt;/latitud&gt;
+					&lt;altitud&gt;20&lt;/altitud&gt;
+				&lt;/coordenadas&gt;
+			&lt;/lresidencia&gt;
+			&lt;fotografias&gt;
+				&lt;fotografia descripcion="Foto de perfil de Guillermo sobre Yuumi de carga"&gt;
+					&lt;enlace&gt;yuumi.png&lt;/enlace&gt;					
+				&lt;/fotografia&gt;
+				&lt;fotografia descripcion="Foto de portada de Guillermo sobre Yuumi"&gt;
+					&lt;enlace&gt;yuumi_cerca.png&lt;/enlace&gt;
+				&lt;/fotografia&gt;
+			&lt;/fotografias&gt;
+			&lt;videos&gt;
+				&lt;video descripcion="Video de Guillermo sobre gameplay no comentado de Yuumi"&gt;
+					&lt;enlace&gt;https://www.youtube.com/watch?v=N9K717CSljE&lt;/enlace&gt;					
+				&lt;/video&gt;
+			&lt;/videos&gt;
+			&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+		&lt;/datos&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Raquel&lt;/nombre&gt;
+				&lt;apellidos&gt;Suárez Álvarez&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-04-09&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Oviedo&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.3694855&lt;/longitud&gt;
+						&lt;latitud&gt;-5.8661673&lt;/latitud&gt;
+						&lt;altitud&gt;242&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Lisboa&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;38.7436214&lt;/longitud&gt;
+						&lt;latitud&gt;-9.1952225&lt;/latitud&gt;
+						&lt;altitud&gt;25&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Raquel sobre Wanda Maximoff"&gt;
+						&lt;enlace&gt;wanda.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de Raquel sobre Wanda y Visión"&gt;
+						&lt;enlace&gt;wandavision.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de muestra de Raquel sobre la Bruja Escarlata"&gt;
+						&lt;enlace&gt;scarletwitch.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de Raquel sobre el trailer de Wandavision"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=UuhqbcMNrME&lt;/enlace&gt;						
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de módulo en Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Carlos&lt;/nombre&gt;
+				&lt;apellidos&gt;Díez Fernández&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-04-09&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Oviedo&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.3862411&lt;/longitud&gt;
+						&lt;latitud&gt;-5.8311886&lt;/latitud&gt;
+						&lt;altitud&gt;242&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Catalunya&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;41.686789&lt;/longitud&gt;
+						&lt;latitud&gt;0.6249296&lt;/latitud&gt;
+						&lt;altitud&gt;242&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Carlos sobre un zorro"&gt;
+						&lt;enlace&gt;zorro.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+					&lt;fotografia descripcion="Foto de portada de Carlos sobre un zorro mirando al sol"&gt;
+						&lt;enlace&gt;zorro_mirando_al_sol.png&lt;/enlace&gt;						
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de Carlos sobre la zorrita Juniper"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=j_Ps9pugPl4&lt;/enlace&gt;						
+					&lt;/video&gt;
+					&lt;video descripcion="Video de Carlos sobre el rescate de la zorrita Arizona"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=hHwcHhLmLzw&lt;/enlace&gt;
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+		&lt;persona&gt;
+			&lt;datos&gt;
+				&lt;nombre&gt;Antonio&lt;/nombre&gt;
+				&lt;apellidos&gt;Castro Álvarez&lt;/apellidos&gt;
+				&lt;fnacimiento&gt;2002-09-09&lt;/fnacimiento&gt;
+				&lt;lnacimiento&gt;
+					&lt;lnombre&gt;Avilés&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;43.5454341&lt;/longitud&gt;
+						&lt;latitud&gt;-5.9390375&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lnacimiento&gt;
+				&lt;lresidencia&gt;
+					&lt;lnombre&gt;Cádiz&lt;/lnombre&gt;
+					&lt;coordenadas&gt;
+						&lt;longitud&gt;36.4719901&lt;/longitud&gt;
+						&lt;latitud&gt;-6.3643009&lt;/latitud&gt;
+						&lt;altitud&gt;20&lt;/altitud&gt;
+					&lt;/coordenadas&gt;
+				&lt;/lresidencia&gt;
+				&lt;fotografias&gt;
+					&lt;fotografia descripcion="Foto de perfil de Antonio sobre El Jincho"&gt;
+						&lt;enlace&gt;el_jincho.png&lt;/enlace&gt;
+					&lt;/fotografia&gt;
+				&lt;/fotografias&gt;
+				&lt;videos&gt;
+					&lt;video descripcion="Video de Antonio sobre una canción de El Jincho"&gt;
+						&lt;enlace&gt;https://www.youtube.com/watch?v=rHi7yNAf_xE&lt;/enlace&gt;
+					&lt;/video&gt;
+				&lt;/videos&gt;
+				&lt;comentario&gt;Estudiante de Ingeniería Informática&lt;/comentario&gt;
+			&lt;/datos&gt;
+		&lt;/persona&gt;
+	&lt;/persona&gt;
+&lt;/persona&gt;</pre><p>Contenido del fichero "Prueba.txt":</p><pre>private JFrame frmCreacionDeCitas;
+	private JTextField txtFechaHoy;
+	private JButton btnTabCarreras;
+	private JTable tabCarreras;
+	private JComboBox&lt;Object&gt; lstCarreras;
+	private JLabel descuento;
+	private JTable tabDetalle;
+	private JLabel lblIndicaIdPaciente;
+	private JTextField textField;
+	private JLabel lblIndicaMedicos;
+	private JLabel lblMedicos;
+	private JScrollPane scrollPane;
+	private JPanel panelDatosMedico;
+	private JPanel panel_1;
+	private JPanel panelIndicadoresColumna;
+	private JLabel lblIdMedico;
+	private JLabel lblNombreMedico;
+	private JLabel lblAsignar;
+	private JPanel panelMedicos;
+	private JPanel panel;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JButton btnAnadirMedico;
+
+	/**
+	 * Create the application.
+	 */
+	public CitaView() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmCreacionDeCitas = new JFrame();
+		frmCreacionDeCitas.setTitle("Creacion de citas");
+		frmCreacionDeCitas.setName("citas");
+		frmCreacionDeCitas.setBounds(0, 0, 1000, 580);
+		frmCreacionDeCitas.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+		frmCreacionDeCitas.getContentPane().setLayout(null);
+		frmCreacionDeCitas.getContentPane().add(getLblIndicaIdPaciente());
+		frmCreacionDeCitas.getContentPane().add(getTextField());
+		frmCreacionDeCitas.getContentPane().add(getLblIndicaMedicos());
+		frmCreacionDeCitas.getContentPane().add(getLblMedicos());
+		frmCreacionDeCitas.getContentPane().add(getPanelDatosMedico());	
+		
+	}
+	private JLabel getLblIndicaIdPaciente() {
+		if (lblIndicaIdPaciente == null) {
+			lblIndicaIdPaciente = new JLabel("Indica el identificador del paciente:");
+			lblIndicaIdPaciente.setBounds(30, 29, 197, 25);
+		}
+		return lblIndicaIdPaciente;
+	}
+	private JTextField getTextField() {
+		if (textField == null) {
+			textField = new JTextField();
+			textField.setBounds(204, 31, 179, 20);
+			textField.setColumns(10);
+		}
+		return textField;
+	}
+	private JLabel getLblIndicaMedicos() {
+		if (lblIndicaMedicos == null) {
+			lblIndicaMedicos = new JLabel("Indica los m\u00E9dicos que atender\u00E1n al paciente:");
+			lblIndicaMedicos.setHorizontalAlignment(SwingConstants.LEFT);
+			lblIndicaMedicos.setBounds(403, 38, 219, 45);
+		}
+		return lblIndicaMedicos;
+	}
+	private JLabel getLblMedicos() {
+		if (lblMedicos == null) {
+			lblMedicos = new JLabel("M\u00E9dicos");
+			lblMedicos.setFont(new Font("Tahoma", Font.BOLD, 12));
+			lblMedicos.setHorizontalAlignment(SwingConstants.CENTER);
+			lblMedicos.setBounds(746, 11, 80, 20);
+		}
+		return lblMedicos;
+	}
+	private JScrollPane getScrollPane() {
+		if (scrollPane == null) {
+			scrollPane = new JScrollPane();
+			scrollPane.setBounds(630, 31, 333, 219);
+			scrollPane.setViewportView(getPanelMedicos());
+		}
+		return scrollPane;
+	}
+	private JPanel getPanelDatosMedico() {
+		if (panelDatosMedico == null) {
+			panelDatosMedico = new JPanel();
+			panelDatosMedico.setBounds(632, 37, 329, 240);
+			panelDatosMedico.setLayout(new BorderLayout(0, 0));
+			panelDatosMedico.add(getPanelIndicadoresColumna(), BorderLayout.NORTH);
+			panelDatosMedico.add(getScrollPane(), BorderLayout.CENTER);
+		}
+		return panelDatosMedico;
+	}
+	private JPanel getPanelIndicadoresColumna() {
+		if (panelIndicadoresColumna == null) {
+			panelIndicadoresColumna = new JPanel();
+			panelIndicadoresColumna.setBorder(new LineBorder(Color.BLACK, 2));
+			panelIndicadoresColumna.setLayout(new GridLayout(1, 3, 0, 0));
+			panelIndicadoresColumna.add(getLblIdMedico());
+			panelIndicadoresColumna.add(getLblNombreMedico());
+			panelIndicadoresColumna.add(getLblAsignar());
+			panelIndicadoresColumna.setPreferredSize(new Dimension(getScrollPane().getWidth(),25));
+		}
+		return panelIndicadoresColumna;
+	}
+	private JLabel getLblIdMedico() {
+		if (lblIdMedico == null) {
+			lblIdMedico = new JLabel("Id. m\u00E9dico");
+			lblIdMedico.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblIdMedico.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblIdMedico;
+	}
+	private JLabel getLblNombreMedico() {
+		if (lblNombreMedico == null) {
+			lblNombreMedico = new JLabel("Nombre y apellidos");
+			lblNombreMedico.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblNombreMedico.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblNombreMedico;
+	}
+	private JLabel getLblAsignar() {
+		if (lblAsignar == null) {
+			lblAsignar = new JLabel("Asignar");
+			lblAsignar.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblAsignar.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblAsignar;
+	}
+	private JPanel getPanelMedicos() {
+		if (panelMedicos == null) {
+			panelMedicos = new JPanel();
+			panelMedicos.setLayout(new GridLayout(1, 0, 0, 0));
+			//Logica pillar los medicos e ir creando paneles con sus datos
+		}
+		return panelMedicos;
+	}
+//	private JPanel getPanel() {
+//		if (panel == null) {
+//			panel = new JPanel();
+//			panel.setLayout(new GridLayout(1, 3, 0, 0));
+//			panel.add(getLblNewLabel());
+//			panel.add(getLblNewLabel_1());
+//			panel.add(getBtnAnadirMedico());
+//		}
+//		return panel;
+//	}
+	private JLabel getLblNewLabel() {
+		if (lblNewLabel == null) {
+			lblNewLabel = new JLabel("New label");
+		}
+		return lblNewLabel;
+	}
+	private JLabel getLblNewLabel_1() {
+		if (lblNewLabel_1 == null) {
+			lblNewLabel_1 = new JLabel("New label");
+		}
+		return lblNewLabel_1;
+	}
+	private JButton getBtnAnadirMedico() {
+		if (btnAnadirMedico == null) {
+			btnAnadirMedico = new JButton("A\u00F1adir m\u00E9dico");
+		}
+		return btnAnadirMedico;
+	}
+</pre></section></article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+
+</body></html>
