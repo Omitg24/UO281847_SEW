@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>    
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	<meta name="author" content="Omar Teixeira González, UO281847">
+	<meta name="description" content="Documento HTMl realizado para la Tarea 1 del Ejercicio 9 de Computación en el cliente">
+	<meta name="keywords" content="html, css, javascript, ecmascript, xml, tiempo, meteorológico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Tiempo meteorológico</h1>
+    </header>
+    <main>
+        <p><label for="selector">Por favor, seleccione una localización y presione "Mostrar tiempo".</label></p>
+        <select id="selector" onclick="meteo.actualizarCiudad()">
+            <option>Seleccione Localización</option>
+            <option>Oviedo</option>
+            <option>Madrid</option>
+            <option>Barcelona</option>
+            <option>Valencia</option>
+            <option>Andorra</option>
+        </select>
+        <input type="button" value="Mostrar tiempo" onclick="meteo.mostrarTiempo()" disabled="disabled"><article><h2>Datos</h2><img src="https://openweathermap.org/img/w/02n.png" alt="Icono del tiempo"><ul><li>Número de elementos del XML: 19</li><li>Ciudad: Barcelona</li><li>Longitud: 2.159 grados</li><li>Latitud: 41.3888 grados</li><li>País: ES</li><li>Amanece a las: 8:02:56</li><li>Oscurece a las: 17:22:04</li><li>Temperatura: 10.02 grados Celsius</li><li>Temperatura mínima: 6.63 grados Celsius</li><li>Temperatura máxima: 12.06 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 87 %</li><li>Presión: 1016 hPa</li><li>Velocidad del viento: 4.12 metros/segundo</li><li>Nombre del viento: Gentle Breeze</li><li>Dirección del viento: 330 grados</li><li>Código del viento: NNW</li><li>Nombre del viento: North-northwest</li><li>Nubosidad: 20</li><li>Nombre nubosidad: few clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitación valor: undefined</li><li>Precipitación modo: no</li><li>Descripción: algo de nubes</li><li>Hora de la medida: 2:40:17</li><li>Fecha de la medida: 6/12/2022</li></ul></article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+
+</body></html>
