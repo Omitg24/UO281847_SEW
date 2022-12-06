@@ -31,33 +31,24 @@ class Consultor {
             {   
                 $("h4").remove();
                 $("table").remove(); 
-                var fecha = datos.Fecha;
                 var ListaEESSPrecio = datos.ListaEESSPrecio;
                 var stringDatos = "<table>";
                 stringDatos+= "<tr>";
                 stringDatos+= "<th>Localidad</th>";
                 stringDatos+= "<th>Dirección</th>";
-                stringDatos+= "<th>Horario</th>";
                 stringDatos+= "<th>Latitud y Longitud</th>";
-                stringDatos+= "<th>Fecha</th>";
                 stringDatos+= "<th>Margen</th>";
                 stringDatos+= "<th>Precio (€/L)</th>";
-                stringDatos+= "<th>Remisión</th>";
                 stringDatos+= "<th>Rótulo</th>";
-                stringDatos+= "<th>Tipo</th>";
                 stringDatos+= "</tr>";
                 for(var i=0; i < ListaEESSPrecio.length;i++) {
                     stringDatos += "<tr>";
                     stringDatos += "<td>" + ListaEESSPrecio[i].Localidad + "</td>";	
                     stringDatos += "<td>" + ListaEESSPrecio[i].Dirección + "</td>";
-                    stringDatos += "<td>" + ListaEESSPrecio[i].Horario + "</td>";
                     stringDatos += "<td>" + ListaEESSPrecio[i].Latitud + ", " + ListaEESSPrecio[i]["Longitud (WGS84)"] + "</td>";
-                    stringDatos += "<td>" + fecha + "</td>";
                     stringDatos += "<td>" + ListaEESSPrecio[i].Margen + "</td>";
                     stringDatos += "<td>" + ListaEESSPrecio[i].PrecioProducto + "</td>";
-                    stringDatos += "<td>" + ListaEESSPrecio[i].Remisión + "</td>";
                     stringDatos += "<td>" + ListaEESSPrecio[i].Rótulo + "</td>";
-                    stringDatos += "<td>" + ListaEESSPrecio[i]["Tipo Venta"] + "</td>";
                     stringDatos += "</tr>";
                 }                
                 stringDatos += "</table>";                
