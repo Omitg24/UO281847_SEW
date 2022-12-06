@@ -6,12 +6,12 @@ class Meteo {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;        
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;        
     }
 
     actualizarCiudad() {
         this.ciudad = $("select option:selected").val();
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
         $("input[type=\"button\"]").attr("disabled", false);
     }
 
@@ -25,7 +25,7 @@ class Meteo {
                 $("h3").remove();
                 $("article").remove();
                 var icono = datos.weather[0].icon;
-                var imagen = "http://openweathermap.org/img/w/" + icono + ".png";
+                var imagen = "https://openweathermap.org/img/w/" + icono + ".png";
                 var stringDatos = "<article>";
                 stringDatos += "<h2>Datos</h2>";                    
                 stringDatos += "<img src=\"" + imagen + "\" alt=\"Icono del tiempo\"/>";
