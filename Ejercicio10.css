@@ -109,7 +109,8 @@ table {
   border-radius: 1em;  
   border-style: solid;
   border-color: #000000;  
-  margin: 0.5em;  
+  margin: 0.5em;
+  overflow: scroll;
 }
 
 /*Selector Specificity: (0, 0, 2)*/
