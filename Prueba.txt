@@ -1,0 +1,170 @@
+private JFrame frmCreacionDeCitas;
+	private JTextField txtFechaHoy;
+	private JButton btnTabCarreras;
+	private JTable tabCarreras;
+	private JComboBox<Object> lstCarreras;
+	private JLabel descuento;
+	private JTable tabDetalle;
+	private JLabel lblIndicaIdPaciente;
+	private JTextField textField;
+	private JLabel lblIndicaMedicos;
+	private JLabel lblMedicos;
+	private JScrollPane scrollPane;
+	private JPanel panelDatosMedico;
+	private JPanel panel_1;
+	private JPanel panelIndicadoresColumna;
+	private JLabel lblIdMedico;
+	private JLabel lblNombreMedico;
+	private JLabel lblAsignar;
+	private JPanel panelMedicos;
+	private JPanel panel;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JButton btnAnadirMedico;
+
+	/**
+	 * Create the application.
+	 */
+	public CitaView() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmCreacionDeCitas = new JFrame();
+		frmCreacionDeCitas.setTitle("Creacion de citas");
+		frmCreacionDeCitas.setName("citas");
+		frmCreacionDeCitas.setBounds(0, 0, 1000, 580);
+		frmCreacionDeCitas.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+		frmCreacionDeCitas.getContentPane().setLayout(null);
+		frmCreacionDeCitas.getContentPane().add(getLblIndicaIdPaciente());
+		frmCreacionDeCitas.getContentPane().add(getTextField());
+		frmCreacionDeCitas.getContentPane().add(getLblIndicaMedicos());
+		frmCreacionDeCitas.getContentPane().add(getLblMedicos());
+		frmCreacionDeCitas.getContentPane().add(getPanelDatosMedico());	
+		
+	}
+	private JLabel getLblIndicaIdPaciente() {
+		if (lblIndicaIdPaciente == null) {
+			lblIndicaIdPaciente = new JLabel("Indica el identificador del paciente:");
+			lblIndicaIdPaciente.setBounds(30, 29, 197, 25);
+		}
+		return lblIndicaIdPaciente;
+	}
+	private JTextField getTextField() {
+		if (textField == null) {
+			textField = new JTextField();
+			textField.setBounds(204, 31, 179, 20);
+			textField.setColumns(10);
+		}
+		return textField;
+	}
+	private JLabel getLblIndicaMedicos() {
+		if (lblIndicaMedicos == null) {
+			lblIndicaMedicos = new JLabel("Indica los m\u00E9dicos que atender\u00E1n al paciente:");
+			lblIndicaMedicos.setHorizontalAlignment(SwingConstants.LEFT);
+			lblIndicaMedicos.setBounds(403, 38, 219, 45);
+		}
+		return lblIndicaMedicos;
+	}
+	private JLabel getLblMedicos() {
+		if (lblMedicos == null) {
+			lblMedicos = new JLabel("M\u00E9dicos");
+			lblMedicos.setFont(new Font("Tahoma", Font.BOLD, 12));
+			lblMedicos.setHorizontalAlignment(SwingConstants.CENTER);
+			lblMedicos.setBounds(746, 11, 80, 20);
+		}
+		return lblMedicos;
+	}
+	private JScrollPane getScrollPane() {
+		if (scrollPane == null) {
+			scrollPane = new JScrollPane();
+			scrollPane.setBounds(630, 31, 333, 219);
+			scrollPane.setViewportView(getPanelMedicos());
+		}
+		return scrollPane;
+	}
+	private JPanel getPanelDatosMedico() {
+		if (panelDatosMedico == null) {
+			panelDatosMedico = new JPanel();
+			panelDatosMedico.setBounds(632, 37, 329, 240);
+			panelDatosMedico.setLayout(new BorderLayout(0, 0));
+			panelDatosMedico.add(getPanelIndicadoresColumna(), BorderLayout.NORTH);
+			panelDatosMedico.add(getScrollPane(), BorderLayout.CENTER);
+		}
+		return panelDatosMedico;
+	}
+	private JPanel getPanelIndicadoresColumna() {
+		if (panelIndicadoresColumna == null) {
+			panelIndicadoresColumna = new JPanel();
+			panelIndicadoresColumna.setBorder(new LineBorder(Color.BLACK, 2));
+			panelIndicadoresColumna.setLayout(new GridLayout(1, 3, 0, 0));
+			panelIndicadoresColumna.add(getLblIdMedico());
+			panelIndicadoresColumna.add(getLblNombreMedico());
+			panelIndicadoresColumna.add(getLblAsignar());
+			panelIndicadoresColumna.setPreferredSize(new Dimension(getScrollPane().getWidth(),25));
+		}
+		return panelIndicadoresColumna;
+	}
+	private JLabel getLblIdMedico() {
+		if (lblIdMedico == null) {
+			lblIdMedico = new JLabel("Id. m\u00E9dico");
+			lblIdMedico.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblIdMedico.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblIdMedico;
+	}
+	private JLabel getLblNombreMedico() {
+		if (lblNombreMedico == null) {
+			lblNombreMedico = new JLabel("Nombre y apellidos");
+			lblNombreMedico.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblNombreMedico.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblNombreMedico;
+	}
+	private JLabel getLblAsignar() {
+		if (lblAsignar == null) {
+			lblAsignar = new JLabel("Asignar");
+			lblAsignar.setFont(new Font("Tahoma", Font.BOLD, 11));
+			lblAsignar.setHorizontalAlignment(SwingConstants.CENTER);
+		}
+		return lblAsignar;
+	}
+	private JPanel getPanelMedicos() {
+		if (panelMedicos == null) {
+			panelMedicos = new JPanel();
+			panelMedicos.setLayout(new GridLayout(1, 0, 0, 0));
+			//Logica pillar los medicos e ir creando paneles con sus datos
+		}
+		return panelMedicos;
+	}
+//	private JPanel getPanel() {
+//		if (panel == null) {
+//			panel = new JPanel();
+//			panel.setLayout(new GridLayout(1, 3, 0, 0));
+//			panel.add(getLblNewLabel());
+//			panel.add(getLblNewLabel_1());
+//			panel.add(getBtnAnadirMedico());
+//		}
+//		return panel;
+//	}
+	private JLabel getLblNewLabel() {
+		if (lblNewLabel == null) {
+			lblNewLabel = new JLabel("New label");
+		}
+		return lblNewLabel;
+	}
+	private JLabel getLblNewLabel_1() {
+		if (lblNewLabel_1 == null) {
+			lblNewLabel_1 = new JLabel("New label");
+		}
+		return lblNewLabel_1;
+	}
+	private JButton getBtnAnadirMedico() {
+		if (btnAnadirMedico == null) {
+			btnAnadirMedico = new JButton("A\u00F1adir m\u00E9dico");
+		}
+		return btnAnadirMedico;
+	}
