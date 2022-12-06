@@ -2,7 +2,7 @@
   Omar Teixeira Gonzalez - UO281847
       Documento CSS que contiene
       los estilos definidos para
-      la Tarea 1 del Ejercicio 11
+      la Tarea 1 del Ejercicio 10
       de la práctica de 
       Computación en la nube
 ***********************************/
@@ -12,6 +12,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -22,7 +23,6 @@ main {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1em;
 }
 
@@ -35,6 +35,20 @@ article {
   border-style: solid;
   border-color: rgb(96, 96, 96);
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+/* Selector Specificity: (0, 0, 1) */
+section {
+  /*color hereda de body*/
+  background-color: #ae4f4f;
+  border-radius: 1.5em;
+  border-width: 0.5em;
+  border-color: #000000;
+  border-style: solid;
+  padding: 2em;  
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -45,14 +59,30 @@ h1 {
 
 /* Selector Specificity: (0, 0, 1) */
 h2 {
-  font: 2.5em Verdana, Geneva, Tahoma, sans-serif;
+  font: 2em Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color : #cecece;
   /*background-color hereda de header*/
 }
 
 /* Selector Specificity: (0, 0, 1) */
-p, label {
+h3 {
+  font: 1.5em Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color : #cecece;
+  /*background-color hereda de header*/
+}
+
+/* Selector Specificity: (0, 0, 1) */
+h4 {
+  font: 1em Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color : #cecece;
+  /*background-color hereda de header*/
+}
+
+/* Selector Specificity: (0, 0, 1) */
+p, li, label {
   font: 1.25em Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 0.5em;
   color : #cecece;
@@ -68,17 +98,50 @@ input, select {
   border-radius: 0.75em;
   padding: 0.45em;  
   border-color: #778899;
-  border-width: 0.5em;
+  border-width: 0.25em;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+table {
+  /*color hereda de body*/
+  background-color: #969696;
+  border-width: 0.25em;
+  border-radius: 1em;  
+  border-style: solid;
+  border-color: #000000;  
+  margin: 0.5em;  
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+table th{
+  /*color hereda de body*/
+  background-color: #f37b7b;
+  border-radius: 0.75em;  
+  border-width: 0.15em;
+  border-style: solid;
+  border-color: #000000;
+  padding: 0.4em;
+}
+
+/*Selector Specificity: (0, 0, 2)*/
+table td {
+  /*color hereda de body*/
+  background-color: #b5b5b5;
+  border-radius: 0.75em;  
+  border-width: 0.15em;
+  border-style: solid;
+  border-color: #000000;
+  padding: 0.4em;
 }
 
 /* Selector Specificity: (0, 2, 1) */
-input[type="button"]:active {
+input:active, select:active {
   /*color hereda de body*/
-  background-color: #d3d3d3;
+  background-color: #f37b7b;
 }
 
 /* Selector Specificity: (0, 1, 1) */
-input:disabled{
+input:disabled, select:disabled{
   /*color hereda de main*/
-  background-color:#d4d4d4;  
+  background-color:#8e8e8e;  
 }
