@@ -2,7 +2,7 @@
   Omar Teixeira Gonzalez - UO281847
       Documento CSS que contiene
       los estilos definidos para
-      la Tarea 1 del Ejercicio 9
+      la Tarea 1 del Ejercicio 8
       de la práctica de 
       Computación en la nube
 ***********************************/
@@ -33,7 +33,7 @@ article {
   border-radius: 1.5em;
   border-width: 0.5em;
   border-style: solid;
-  border-color: rgb(96, 96, 96);
+  border-color: #606060;
   padding: 2em;
 }
 
@@ -59,7 +59,7 @@ h3 {
 }
 
 /* Selector Specificity: (0, 0, 1) */
-li, label {
+p, label {
   font: 1.25em Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 0.5em;
   color : #cecece;
