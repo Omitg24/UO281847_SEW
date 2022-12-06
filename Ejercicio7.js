@@ -44,11 +44,11 @@ class Funcionalidades {
                     "vue", "sumafilas"];
         var indexFilas = 0;
         var indexColumnas = 0;
-        var valorFila = "";
+        var valorFila = 0;
         $("tr").each(function() {
             $(this).find("td").each(function() {
                 var valorCelda = $(this).text();
-                valorFila += valorCelda;
+                valorFila += Number(valorCelda);
             });
             if ($(this).find("td").length == 0) {
                 $(this).append("<th scope=\"col\" id=\"sumafilas\">ΣFilas</th>");
@@ -56,16 +56,16 @@ class Funcionalidades {
                 $(this).append("<td headers=\"" + filas[indexFilas] + " sumafilas\">" + valorFila + "</td>");
                 indexFilas++;
             }
-            valorFila = "";            
+            valorFila = 0;            
         });
 
-        var valorColumna="";
+        var valorColumna=0;
         var contador = 0;
         var nFilas = 0;
         while(contador < $("tr:first-child > th ").length - 1) {
             $("tr").each(function() {
                 var valorCelda = $(this).find("td").eq(contador).text();
-                valorColumna += valorCelda;
+                valorColumna += Number(valorCelda);
                 nFilas++;
                 if (nFilas == $("tr").length) {
                     if (contador == 0) {
@@ -75,7 +75,7 @@ class Funcionalidades {
                     contador++;
                     indexColumnas++;
                     nFilas = 0;
-                    valorColumna = "";
+                    valorColumna = 0;
                 }
             })
         }        
