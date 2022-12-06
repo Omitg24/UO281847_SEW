@@ -90,7 +90,7 @@ p, li, label {
 
 /* Selector Specificity: (0, 0, 1) */
 pre {
-  font-size: 1.1em;
+  font-size: 1.25em;
   color : #cecece;
   /*background-color hereda de main*/
   overflow-x: auto;
