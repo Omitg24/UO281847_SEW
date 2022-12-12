@@ -13,6 +13,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5em;
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -24,6 +25,14 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.6em; 
+}
+
+/* Selector Specificity: (0, 0, 1) */
+article {
+  background-color: #000000; 
+  padding: 0.5em;
+  border-radius: 0.5em;
+  text-align: justify;  
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -51,6 +60,14 @@ h2 {
   color: #ffffff;
   /*background-color hereda de section*/
   grid-column: span 6;
+}
+
+/* Selector Specificity: (0, 0, 1) */
+p {
+  font: 1.25em 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #ffffff;
+  /*background-color hereda de section*/
 }
 
 /* Selector Specificity: (0, 0, 1) */
@@ -103,6 +120,16 @@ section input[type="button"] {
 input[type="button"][value="Enter"],
 input[type="button"][value="0"] {
   grid-column: span 2;
+}
+
+/* Selector Specificity: (0, 2, 1) */
+input[type="button"][value="Enter"],
+input[type="button"][value="C"] {
+  /*color hereda de body*/
+  background-color: #ff9898;
+  border-color: #760000;
+  border-width: 0.25em;
+  border-style: solid;
 }
 
 /* Selector Specificity: (0, 2, 1) */
