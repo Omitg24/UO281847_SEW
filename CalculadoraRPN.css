@@ -86,7 +86,7 @@ textarea, input[type="text"] {
 /* Selector Specificity: (0, 1, 1) */
 input[type="button"] {
   font-size: 1.1em;  
-  padding: 1.5em;  
+  padding: 1em;  
   border-color: #a1a1a1;
   border-radius: 0.2em;    
 }
@@ -96,7 +96,7 @@ section input[type="button"] {
   font-weight: bold;  
   /*color hereda de body*/
   background-color: #a9a9a9;   
-  min-width: 6.5em;
+  min-width: 1em;
 }
 
 /* Selector Specificity: (0, 2, 1) */
