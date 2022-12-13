@@ -12,6 +12,7 @@ body{
   /*background-color por defecto*/
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5em;
 }
@@ -29,7 +30,7 @@ main {
 
 /* Selector Specificity: (0, 0, 1) */
 article {
-  background-color: #000000; 
+  background-color: #760000; 
   padding: 0.5em;
   border-radius: 0.5em;
   text-align: justify;  
@@ -63,8 +64,8 @@ h2 {
 }
 
 /* Selector Specificity: (0, 0, 1) */
-p {
-  font: 1.25em 'Courier New', Courier, monospace;
+p, pre {
+  font: 1.5em 'Courier New', Courier, monospace;
   font-weight: bold;
   color: #ffffff;
   /*background-color hereda de section*/
@@ -102,8 +103,9 @@ textarea, input[type="text"] {
 
 /* Selector Specificity: (0, 1, 1) */
 input[type="button"] {
-  font-size: 1.1em;  
-  padding: 1em;  
+  font-size: 1.2em;    
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-color: #a1a1a1;
   border-radius: 0.2em;    
 }
@@ -130,6 +132,14 @@ input[type="button"][value="C"] {
   border-color: #760000;
   border-width: 0.25em;
   border-style: solid;
+}
+
+input[type="button"][value="+"],
+input[type="button"][value="-"],
+input[type="button"][value="x"],
+input[type="button"][value="÷"],
+input[type="button"][value="."] {
+  font-size: 1.5em;
 }
 
 /* Selector Specificity: (0, 2, 1) */
