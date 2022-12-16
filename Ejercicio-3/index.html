@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>    
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	<meta name="author" content="Omar Teixeira González, UO281847">
+	<meta name="description" content="Documento PHP realizado para la Tarea 1 del Ejercicio 3 de Computación en el servidor">
+	<meta name="keywords" content="html, css, php, calculadora RPN">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora RPN</title>   
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Calculadora RPN</h1>
+    </header>  
+    <main>        
+                <form action="#" method="POST">
+            <section>
+                <h2>HP</h2>
+                <label for="pila">Prime Graphing Calculator</label>
+                <textarea id="pila" disabled="">4 :[1]
+669 :[2]
+31.38470965295 :[3]
+988 :[4]
+88889 :[5]
+</textarea>
+                <label for="valores">Valor introducido</label>  
+                <input type="text" value="0" id="valores" disabled="">
+                
+                <input type="submit" value="DEG" name="DEG">
+                <input type="submit" value="sin" name="sin">
+                <input type="submit" value="cos" name="cos">
+                <input type="submit" value="tan" name="tan">
+                <input type="submit" value="x^2" name="x^2">            
+                <input type="submit" value="log" name="log">         
+                            
+                <input type="submit" value="↑" name="shift">          
+                <input type="submit" value="√" name="√">         
+                <input type="submit" value="10^x" name="10^x">           
+                <input type="submit" value="n!" name="n!">
+                <input type="submit" value="x^y" name="x^y">
+                <input type="submit" value="ln" name="ln">
+
+                <input type="submit" value="±" name="±">
+                <input type="submit" value="CE" name="CE">
+                <input type="submit" value="C" name="C">		
+                <input type="submit" value="⌫" name="⌫">
+                <input type="submit" value="Enter" name="Enter">
+            </section>
+            
+            <input type="submit" value="7" name="7">
+            <input type="submit" value="8" name="8">
+            <input type="submit" value="9" name="9">       
+            <input type="submit" value="÷" name="÷">
+
+            <input type="submit" value="4" name="4">
+            <input type="submit" value="5" name="5">
+            <input type="submit" value="6" name="6">
+            <input type="submit" value="x" name="x">
+            
+            <input type="submit" value="1" name="1">
+            <input type="submit" value="2" name="2">
+            <input type="submit" value="3" name="3">
+            <input type="submit" value="+" name="+">
+
+            <input type="submit" value="0" name="0">
+            <input type="submit" value="." name="punto">
+            <input type="submit" value="-" name="-">        
+        </form>
+    </main>
+
+</body></html>

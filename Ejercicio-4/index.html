@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>    
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	<meta name="author" content="Omar Teixeira González, UO281847">
+	<meta name="description" content="Documento PHP realizado para la Tarea 1 del Ejercicio 3 de Computación en el servidor">
+	<meta name="keywords" content="html, css, php, consultor, oro, precios">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio4.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Consultor de precios del Oro</h1>
+</header>
+    <main>
+                
+        <p>Para consultar el precio del Oro, seleccione la divisa en la que le interese ver el precio y la fecha a buscar.</p>
+        <form action="#" method="POST">            
+            <label for="divisa">Seleccione una divisa:</label>
+            <select name="divisa" id="divisa">
+                <option value="EUR">EUR - European Euro (€)</option>
+                <option value="USD">USD - United States Dollar ($)</option>
+                <option value="BTC">BTC - Bitcoin</option>
+            </select>
+            <label for="fecha">Seleccione una fecha:</label>
+            <input type="date" name="fecha" id="fecha" value="2022-01-01">
+            <input type="submit" value="Consultar precio" name="consultar">
+        </form>
+        
+        <section>
+            <h2>Precio del Oro:</h2>
+            <ul>
+                <li>Precio completo: 1582.7373 EUR</li>
+                <li>Precio de un gramo de 24k: 50.8862 EUR</li>
+                <li>Precio de un gramo de 22k: 46.6457 EUR</li>
+                <li>Precio de un gramo de 21k: 44.5254 EUR</li>
+                <li>Precio de un gramo de 20k: 42.4052 EUR</li>
+                <li>Precio de un gramo de 18k: 38.1646 EUR</li>
+            </ul>
+        </section>
+    </main>
+
+</body></html>
