@@ -78,8 +78,8 @@ section {
 
 /*Selector Specificity: (0, 0, 1)*/
 aside {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;  
+  flex-direction: column;
   gap: 1em;
 }
 
