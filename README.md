@@ -18,53 +18,53 @@ Como consejo personal, no copies las prácticas del repositorio, nadie quiere un
 
 ## Enlaces a las prácticas.
 ### Introducción:
-  * Ejercicio: https://omitg24.github.io/Github-Pages/1_Introduccion/index.html  
+  * Ejercicio: https://omitg24.github.io/UO281847_SEW/1_Introduccion/index.html  
 ---
 
 ### HTML y CSS:
-  * Ejercicio: https://omitg24.github.io/Github-Pages/2_HTML&CSS/index.html  
+  * Ejercicio: https://omitg24.github.io/UO281847_SEW/2_HTML&CSS/index.html  
 ---
 
 ### XML:
   * Ejercicio 2: 
-    * Tarea 1: https://omitg24.github.io/Github-Pages/3_XML/Ejercicio-2/Tarea-1/SocialNetwork.html
-    * Tarea 3: https://omitg24.github.io/Github-Pages/3_XML/Ejercicio-2/Tarea-3/SocialNetwork.svg
+    * Tarea 1: https://omitg24.github.io/UO281847_SEW/3_XML/Ejercicio-2/Tarea-1/SocialNetwork.html
+    * Tarea 3: https://omitg24.github.io/UO281847_SEW/3_XML/Ejercicio-2/Tarea-3/SocialNetwork.svg
 ---
 
 ### JavaScript:
 #### Sección 1:
-  * Ejercicio 1: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-01/Ejercicio1.html
-  * Ejercicio 2: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-02/Ejercicio2.html
-  * Ejercicio 3: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-03/CalculadoraMilan.html
-  * Ejercicio 4: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-04/CalculadoraCientifica.html
-  * Ejercicio 5: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-05/CalculadoraRPN.html
-  * Ejercicio 6: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_1/Ejercicio-06/CalculadoraEspecializada.html
+  * Ejercicio 1: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-01/Ejercicio1.html
+  * Ejercicio 2: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-02/Ejercicio2.html
+  * Ejercicio 3: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-03/CalculadoraMilan.html
+  * Ejercicio 4: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-04/CalculadoraCientifica.html
+  * Ejercicio 5: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-05/CalculadoraRPN.html
+  * Ejercicio 6: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_1/Ejercicio-06/CalculadoraEspecializada.html
 #### Sección 2:
-  * Ejercicio 7: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-07/Ejercicio7.html
-  * Ejercicio 8: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-08/Ejercicio8.html
-  * Ejercicio 9: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-09/Ejercicio9.html
-  * Ejercicio 10: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-10/Ejercicio10.html
+  * Ejercicio 7: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-07/Ejercicio7.html
+  * Ejercicio 8: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-08/Ejercicio8.html
+  * Ejercicio 9: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-09/Ejercicio9.html
+  * Ejercicio 10: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-10/Ejercicio10.html
   * Ejercicio 11: 
-    * Tarea 1: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-1/Tarea1.html
-    * Tarea 2: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-2/Tarea2.html
-    * Tarea 3: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-3/Tarea3.html
-    * Tarea 4: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-4/Tarea4.html
-    * Tarea 5: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-5/Tarea5.html
-    * Tarea 6: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-6/Tarea6.html
-  * Ejercicio 12: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-12/Ejercicio12.html
+    * Tarea 1: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-1/Tarea1.html
+    * Tarea 2: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-2/Tarea2.html
+    * Tarea 3: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-3/Tarea3.html
+    * Tarea 4: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-4/Tarea4.html
+    * Tarea 5: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-5/Tarea5.html
+    * Tarea 6: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-6/Tarea6.html
+  * Ejercicio 12: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-12/Ejercicio12.html
   * Ejercicio 13: 
-    * Tarea 1: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-1/MapaKML.html
-    * Tarea 2: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-2/MapaGeoJSON.html
-  * Ejercicio 14: https://omitg24.github.io/Github-Pages/4_JavaScript/Seccion_2/Ejercicio-14/Ejercicio14.html
+    * Tarea 1: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-1/MapaKML.html
+    * Tarea 2: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-2/MapaGeoJSON.html
+  * Ejercicio 14: https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-14/Ejercicio14.html
 ---
 
 ### PHP:
-  * Ejercicio 1: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-1/CalculadoraMilan.php
-  * Ejercicio 2: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-2/CalculadoraCientifica.php
-  * Ejercicio 3: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-3/CalculadoraRPN.php
-  * Ejercicio 4: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-4/Ejercicio4.php
-  * Ejercicio 6: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-6/Ejercicio6.php
-  * Ejercicio 7: https://omitg24.github.io/Github-Pages/5_PHP/Ejercicio-7/Ejercicio7.php
+  * Ejercicio 1: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-1/CalculadoraMilan.php
+  * Ejercicio 2: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-2/CalculadoraCientifica.php
+  * Ejercicio 3: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-3/CalculadoraRPN.php
+  * Ejercicio 4: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-4/Ejercicio4.php
+  * Ejercicio 6: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-6/Ejercicio6.php
+  * Ejercicio 7: https://omitg24.github.io/UO281847_SEW/5_PHP/Ejercicio-7/Ejercicio7.php
 
 ### Calculadora RPN (Tras las pruebas):
-  * https://omitg24.github.io/Github-Pages/Pruebas_Usabilidad/index.html
+  * https://omitg24.github.io/UO281847_SEW/Pruebas_Usabilidad/index.html
