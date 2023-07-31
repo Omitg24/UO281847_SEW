@@ -52,7 +52,7 @@ Como consejo personal, no copies las prácticas del repositorio, nadie quiere un
     * [Tarea 5.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-5/Tarea5.html)
     * [Tarea 6.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-11/Tarea-6/Tarea6.html)
   * [Ejercicio 12.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-12/Ejercicio12.html)
-  * [Ejercicio 13: 
+  * Ejercicio 13: 
     * [Tarea 1.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-1/MapaKML.html)
     * [Tarea 2.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-13/Tarea-2/MapaGeoJSON.html)
   * [Ejercicio 14.](https://omitg24.github.io/UO281847_SEW/4_JavaScript/Seccion_2/Ejercicio-14/Ejercicio14.html)
